@@ -3,6 +3,7 @@
 
 (let* (sccollab-server
        sccollab-clients
+       path-listeners
        get-ip)
   (setq get-ip (arg ip)
 	"get an ip address"
@@ -11,6 +12,8 @@
     (setq sccollab-server (osc-make-server "localhost" 7777 
                                            (lambda (path &rest args)
                                              (receive-collaboration path args)))))
+  (defun receive-collaboration (path args)
+    (display-warning :debug path "*Messages*"))
   (defun sccollab (arg ip-list)
     "start a supercollider collaboration"
     (interactive)
