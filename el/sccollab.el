@@ -14,10 +14,10 @@
   (interactive)
   (unless ip-list
     (let (new-ip)
-      (while (setq new-ip (read-from-minibuffer "add ip: "))
+      (while (> (length (setq new-ip (read-from-minibuffer "add ip: "))) 0)
 	(setq ip-list (cons new-ip ip-list))
-	(display-warning :debug ip-list)))
+	(display-warning :debug new-ip))))
   (setq sccollab-clients
 	(mapcar (lambda (client-ip) (osc-make-client client-ip 7777))
-		ip-list))))
+		ip-list)))
 
