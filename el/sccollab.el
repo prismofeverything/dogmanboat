@@ -4,6 +4,7 @@
 (defvar sccollab-clients)
 
 (defun sccollab-server-start ()
+  (interactive)
   (setq sccollab-server
 	(osc-make-server "localhost" 7777 
 			 (lambda (path &rest args)
@@ -11,6 +12,7 @@
 
 (defun sccollab-server-stop ()
   "stop the supercollider collaboration"
+  (interactive)
   (delete-process sccollab-server)
   (setq sccollab-server nil))
 
