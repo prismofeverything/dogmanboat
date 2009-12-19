@@ -42,10 +42,16 @@
 				   (sccollab-receive path args)))))
 
 (defun sccollab-server-stop ()
-  "stop the supercollider collaboration"
+  "stop the supercollider collaboration server"
   (interactive)
   (delete-process sccollab-server)
   (setq sccollab-server nil))
+
+(defun sccollab-clients-stop ()
+  "stop the supercollider collaboration clients"
+  (interactive)
+  (dolist (client sccollab-clients) (delete-process client))
+  (setq sccollab-clients nil))
 
 (defun sccollab-send (path args)
   (mapcar (lambda (client) 
@@ -62,14 +68,16 @@
 			   path args))))
 
 (defun sccollab (&optional ip-list)
-  "start a supercollider collaboration"
+  "start sharing with a set of collaborators"
   (interactive)
   (unless ip-list
     (let (new-ip)
-      (while (> (length (setq new-ip (read-from-minibuffer "add ip: "))) 0)
-	(setq ip-list (cons new-ip ip-list))
-	(display-warning :debug (format "added ip %s" new-ip)))))
-  (setq sccollab-clients
-	(mapcar (lambda (client-ip) (osc-make-client client-ip 7777))
-		ip-list)))
+      (while (> (length
+		 (setq new-ip (read-from-minibuffer
+			       (format "%s add ip: " (if ip-list ip-list "")))))
+		       0)
+	(setq ip-list (cons new-ip ip-list)))))
+  (dolist (client-ip ip-list)
+	  (setq sccollab-clients (cons (osc-make-client client-ip 7777)
+				       sccollab-clients))))
 
