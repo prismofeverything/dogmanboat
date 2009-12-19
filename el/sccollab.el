@@ -27,6 +27,9 @@
 					 (format "%s %s" prompt (car d))))
 	    (setq prompt (format "%s%s" prompt " ): "))
 	    ;; get the ip address string from the interface definition
+	    ;; if we end up overriding osc-make-server (good chance that we
+	    ;; will have to, I think) just open the server by interface or
+	    ;; device name.
 	    (let* ((chosen (read-from-minibuffer prompt default-device-name))
 		   (ip (cdr (assoc-string chosen interfaces))))
 	      (if (not ip)
@@ -51,8 +54,12 @@
           sccollab-clients))
 
 (defun sccollab-receive (path args)
-  (display-warning :debug
-		   (format "received from osc path: %s args: %s" path args)))
+  (let ((remote (process-contact sccollab-server :remote)))
+  (display-warning
+   :debug
+   (format "received from %d.%d.%d.%d via osc path: %s args: %s"
+	   (aref remote 0) (aref remote 1) (aref remote 2) (aref remote 3)
+			   path args))))
 
 (defun sccollab (&optional ip-list)
   "start a supercollider collaboration"
