@@ -21,7 +21,7 @@
           sccollab-clients))
 
 (defun sccollab-receive (path args)
-  (display-warning :debug path "*Messages*"))
+  (display-warning :debug path))
 
 (defun sccollab (&optional ip-list)
   "start a supercollider collaboration"
