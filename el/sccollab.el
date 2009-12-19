@@ -3,10 +3,11 @@
 (defvar sccollab-server)
 (defvar sccollab-clients)
 
-(defun sccollab-server-start ()
-  (interactive)
+(defun sccollab-server-start (&optional addr)
+  "serve sccollab to people connecting at addr"
+  (interactive "Mip to serve from: ") ; how to get ip of default address?
   (setq sccollab-server
-	(osc-make-server "192.168.1.110" 7777 
+	(osc-make-server addr 7777 
 			 (lambda (path &rest args)
 			   (sccollab-receive path args)))))
 
