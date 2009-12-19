@@ -7,7 +7,7 @@
   (setq sccollab-server
 	(osc-make-server "localhost" 7777 
 			 (lambda (path &rest args)
-			   (receive-collaboration path args)))))
+			   (sccollab-receive path args)))))
 
 (defun sccollab-server-stop ()
   (delete-process sccollab-server)
@@ -20,7 +20,7 @@
           sccollab-clients))
 
 (defun sccollab-receive (path args)
-  (display-warning :debug path "*Messages*"))
+  (display-warning :debug path))
 
 (defun sccollab (&optional ip-list)
   "start a supercollider collaboration"
@@ -33,4 +33,6 @@
   (setq sccollab-clients
 	(mapcar (lambda (client-ip) (osc-make-client client-ip 7777))
 		ip-list)))
+
+
 
