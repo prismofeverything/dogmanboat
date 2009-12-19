@@ -5,7 +5,9 @@
 
 (defun sccollab-server-start (&optional addr)
   "serve sccollab to people connecting at addr"
-  (interactive "Mip to serve from: ") ; how to get ip of default address?
+  (interactive
+   "Mour ip - specify localhost or 127.0.0.1 for local connections only: ")
+					; how to get ip of default address?
   (setq sccollab-server
 	(osc-make-server addr 7777 
 			 (lambda (path &rest args)
