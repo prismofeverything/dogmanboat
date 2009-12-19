@@ -6,7 +6,7 @@
 (defun sccollab-server-start ()
   (interactive)
   (setq sccollab-server
-	(osc-make-server "localhost" 7777 
+	(osc-make-server "192.168.1.110" 7777 
 			 (lambda (path &rest args)
 			   (sccollab-receive path args)))))
 
