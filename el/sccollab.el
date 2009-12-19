@@ -23,7 +23,8 @@
           sccollab-clients))
 
 (defun sccollab-receive (path args)
-  (display-warning :debug "received from osc path: %s args:" path args))
+  (display-warning :debug
+		   (format "received from osc path: %s args:" path args)))
 
 (defun sccollab (&optional ip-list)
   "start a supercollider collaboration"
@@ -32,7 +33,7 @@
     (let (new-ip)
       (while (> (length (setq new-ip (read-from-minibuffer "add ip: "))) 0)
 	(setq ip-list (cons new-ip ip-list))
-	(display-warning :debug "added ip %s" new-ip))))
+	(display-warning :debug (format "added ip %s" new-ip)))))
   (setq sccollab-clients
 	(mapcar (lambda (client-ip) (osc-make-client client-ip 7777))
 		ip-list)))
