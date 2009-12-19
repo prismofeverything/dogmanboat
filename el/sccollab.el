@@ -10,6 +10,7 @@
 			   (sccollab-receive path args)))))
 
 (defun sccollab-server-stop ()
+  "stop the supercollider collaboration"
   (delete-process sccollab-server)
   (setq sccollab-server nil))
 
