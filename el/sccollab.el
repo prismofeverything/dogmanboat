@@ -23,7 +23,7 @@
           sccollab-clients))
 
 (defun sccollab-receive (path args)
-  (display-warning :debug "received from %s" path))
+  (display-warning :debug "received from osc path: %s args:" path args))
 
 (defun sccollab (&optional ip-list)
   "start a supercollider collaboration"
