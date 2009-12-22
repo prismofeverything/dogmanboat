@@ -2,13 +2,14 @@
 
 (defgroup sccollab nil
   "collaborative sharing and evaluation of supercollider code within emacs"
-  :prefix 'sccollab)
+  :prefix 'sccollab
+  :group 'sclang)
 
-(defcustom sccollab-timestap-lambda 'current-time
+(defcustom sccollab-timestamp-lambda #'current-time
   "function to generate the timestamps in the *sccollab* buffer"
-  :options '(current-time-string current-time)
+  :options '(#'current-time-string #'current-time)
   :group 'sccollab
-  :type 'lambda)
+  :type 'function)
 
 (defcustom sccollab-default-server-port 7777
   "default port to use for the sccollab local server"
@@ -33,7 +34,8 @@
 (defmacro sccollab-entry (body)
   `(with-current-buffer sccollab-buffer
      (end-of-buffer)
-     (insert ,body "//" (format "%s\n" (current-time)))))
+     (insert ,body " // " (format "%s\n"
+				  (apply sccollab-timestamp-lambda '())))))
 
 (defun sccollab-server-start (&optional addr iface)
   "serve sccollab to people connecting at addrs"
@@ -76,7 +78,7 @@
 			     (sccollab-receive path args)))))
     (end-of-buffer)
     (insert "// sccollab server started on " iface " " addr " port 7777 "
-	    (format "%s\n" (current-time)))))
+	    (format "%s\n" (apply sccollab-timestamp-lambda '())))))
 
 
 (defun sccollab-server-stop ()
@@ -84,14 +86,14 @@
   (interactive)
   (delete-process sccollab-server)
   (setq sccollab-server nil)
-  (sccollab-entry "// stopped server "))
+  (sccollab-entry "// stopped server"))
 
 (defun sccollab-clients-stop ()
   "stop the supercollider collaboration clients"
   (interactive)
   (dolist (client sccollab-remote-servers) (delete-process client))
   (setq sccollab-remote-servers nil)
-  (sccollab-entry "// disconnected from clients "))
+  (sccollab-entry "// disconnected from clients"))
 
 (defun sccollab-stop ()
   "close all sccollab network connections"
@@ -111,7 +113,7 @@
 (defun sccollab-use-region (start end eval)
   "share the current region via sccollab, optional evaluation"
   (let ((to-send (buffer-substring-no-properties start end)))
-    (sccollab-entry (format "%s // local %s " to-send
+    (sccollab-entry (format "%s // local %s" to-send
 			    (if eval "eval" "no-eval")))
     (sccollab-send (if eval "/sccollab/eval" "/sccollab/noeval")
 		   (list to-send))))
@@ -161,4 +163,4 @@
       (end-of-buffer)
       (insert "// connected to " server-ip " "
 	      (number-to-string sccollab-client-port) " "
-	      (format "%s\n" (current-time))))))
+	      (format "%s\n" (apply sccollab-timestamp-lambda '()))))))
