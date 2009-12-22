@@ -1,9 +1,14 @@
-(defcustom sccollab-timestap-lambda current-time
+(provide 'sccollab)
+
+(defgroup sccollab nil
+  "collaborative sharing and evaluation of supercollider code within emacs"
+  :prefix 'sccollab)
+
+(defcustom sccollab-timestap-lambda 'current-time
   "function to generate the timestamps in the *sccollab* buffer"
-   "use #'current-time-string for a readable version, #'current-time"
-   "for a more accurate one"
-   :group 'sccollab
-   :type 'lambda)
+  :options '(current-time-string current-time)
+  :group 'sccollab
+  :type 'lambda)
 
 (defcustom sccollab-default-server-port 7777
   "default port to use for the sccollab local server"
@@ -20,7 +25,7 @@
 
 (defvar sccollab-debug t)
 (defvar sccollab-server)
-(defvar sccollab-clients)
+(defvar sccollab-remote-servers '())
 (defvar sccollab-buffer)
 (defvar sccollab-server-port sccollab-default-server-port)
 (defvar sccollab-client-port sccollab-default-client-port)
@@ -80,56 +85,60 @@
   (delete-process sccollab-server)
   (setq sccollab-server nil)
   (sccollab-entry "// stopped server "))
-      
+
 (defun sccollab-clients-stop ()
   "stop the supercollider collaboration clients"
   (interactive)
-  (dolist (client sccollab-clients) (delete-process client))
-  (setq sccollab-clients nil)
+  (dolist (client sccollab-remote-servers) (delete-process client))
+  (setq sccollab-remote-servers nil)
   (sccollab-entry "// disconnected from clients "))
 
 (defun sccollab-stop ()
   "close all sccollab network connections"
   (interactive)
-  (sccollab-server-stop)
-  (sccollab-clients-stop))
-
+  (when sccollab-server (sccollab-server-stop))
+  (when sccollab-remote-servers (sccollab-clients-stop)))
 
 (defun sccollab-send (path args)
   (when (stringp (car args))
-      (when (and sclang-get-process (string= path "/sccollab/eval"))
-	(sclang-eval-string (car args) t))
-      (mapcar (lambda (client) 
-		(apply 'osc-send-message
-		       (cons client (cons path args))))
-	      sccollab-clients)))
+    (when (and (sclang-get-process) (string= path "/sccollab/eval"))
+      (sclang-eval-string (car args) t))
+    (mapcar (lambda (client) 
+	      (apply 'osc-send-message
+		     (cons client (cons path args))))
+	    sccollab-remote-servers)))
+
+(defun sccollab-use-region (start end eval)
+  "share the current region via sccollab, optional evaluation"
+  (let ((to-send (buffer-substring-no-properties start end)))
+    (sccollab-entry (format "%s // local %s " to-send
+			    (if eval "eval" "no-eval")))
+    (sccollab-send (if eval "/sccollab/eval" "/sccollab/noeval")
+		   (list to-send))))
 
 (defun sccollab-noeval-region (start end)
   "collaborate the current region, no evaluation"
   (interactive "r")
-  (let ((to-send (buffer-substring start end)))
-    (sccollab-entry to-send)
-    (sccollab-send "/sccollab/noeval" to-send)))
+  (sccollab-use-region start end nil))
   
 (defun sccollab-eval-region (start end)
   "collaborate the current region, with evaluation"
   (interactive "r")
-  (let ((to-send (buffer-substring start end)))
-    (sccollab-entry to-send)
-    (sclang-eval
-    (sccollab-send "/sccollab/eval" to-send)))
+  (sccollab-use-region start end t))
   
 
 (defun sccollab-receive (path args)
   (let ((remote (process-contact sccollab-server :remote)))
-    (when (and (sclang-get-process) (string= path "sccollab/eval"))
+    (when (and (sclang-get-process) (string= path "/sccollab/eval"))
       (sclang-eval-string (car args) t))
-    (sccollab-entry (format "%s // from %d.%d.%d.%d:%d%s"
+    (sccollab-entry (format "%s // from %d.%d.%d.%d:%d %s%s"
 			    (if (stringp (car args)) (car args) "")
 			    (aref remote 0) (aref remote 1) (aref remote 2)
 			    (aref remote 3) (aref remote 4)
+			    (if (not (string= path "/sccollab/eval"))
+				"no-eval" "eval")
 			    (if sccollab-debug
-				(format " osc path: <%s> args: <%s> "
+				(format "\n/* osc path: <%s> args: <%s> */"
 					path args) "")))))
 
 (defun sccollab (&optional ip-list)
@@ -146,9 +155,10 @@
 		  0)
 	  (setq ip-list (cons new-ip ip-list)))))
     (dolist (server-ip ip-list)
-      (setq sccollab-servers (cons (osc-make-client server-ip
-						    sccollab-server-port)
-				   sccollab-servers))
+      (setq sccollab-remote-servers (cons (osc-make-client server-ip
+							   sccollab-server-port)
+					  sccollab-remote-servers))
       (end-of-buffer)
-      (insert "// connected to " server-ip " " sccollab-client-port " "
+      (insert "// connected to " server-ip " "
+	      (number-to-string sccollab-client-port) " "
 	      (format "%s\n" (current-time))))))
