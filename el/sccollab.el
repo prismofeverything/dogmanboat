@@ -1,9 +1,19 @@
-(defcustom sccollab-timestap-lambda #'current-time
+(defcustom sccollab-timestap-lambda current-time
   "function to generate the timestamps in the *sccollab* buffer"
    "use #'current-time-string for a readable version, #'current-time"
    "for a more accurate one"
    :group 'sccollab
    :type 'lambda)
+
+(defcustom sccollab-default-server-port 7777
+  "default port to use for the sccollab local server"
+  :group 'sccollab
+  :type 'integer)
+
+(defcustom sccollab-default-client-port 7777
+  "default port to connect to on sccollab remote servers"
+  :group 'sccollab
+  :type 'integer)
 
 (require 'osc)
 (require 'sclang)
@@ -12,6 +22,8 @@
 (defvar sccollab-server)
 (defvar sccollab-clients)
 (defvar sccollab-buffer)
+(defvar sccollab-server-port sccollab-default-server-port)
+(defvar sccollab-client-port sccollab-default-client-port)
 
 (defmacro sccollab-entry (body)
   `(with-current-buffer sccollab-buffer
@@ -54,7 +66,7 @@
 		   (format "%d.%d.%d.%d"
 			   (aref ip 0) (aref ip 1) (aref ip 2) (aref ip 3)))))
     (setq sccollab-server
-	  (osc-make-server addr 7777 
+	  (osc-make-server addr sccollab-server-port
 			   (lambda (path &rest args)
 			     (sccollab-receive path args)))))
     (end-of-buffer)
@@ -69,8 +81,6 @@
   (setq sccollab-server nil)
   (sccollab-entry "// stopped server "))
       
-		       
-
 (defun sccollab-clients-stop ()
   "stop the supercollider collaboration clients"
   (interactive)
@@ -78,21 +88,46 @@
   (setq sccollab-clients nil)
   (sccollab-entry "// disconnected from clients "))
 
+(defun sccollab-stop ()
+  "close all sccollab network connections"
+  (interactive)
+  (sccollab-server-stop)
+  (sccollab-clients-stop))
+
+
 (defun sccollab-send (path args)
   (when (stringp (car args))
-      (when (sclang-get-process)
+      (when (and sclang-get-process (string= path "/sccollab/eval"))
 	(sclang-eval-string (car args) t))
       (mapcar (lambda (client) 
 		(apply 'osc-send-message
 		       (cons client (cons path args))))
 	      sccollab-clients)))
 
+(defun sccollab-noeval-region (start end)
+  "collaborate the current region, no evaluation"
+  (interactive "r")
+  (let ((to-send (buffer-substring start end)))
+    (sccollab-entry to-send)
+    (sccollab-send "/sccollab/noeval" to-send)))
+  
+(defun sccollab-eval-region (start end)
+  "collaborate the current region, with evaluation"
+  (interactive "r")
+  (let ((to-send (buffer-substring start end)))
+    (sccollab-entry to-send)
+    (sclang-eval
+    (sccollab-send "/sccollab/eval" to-send)))
+  
+
 (defun sccollab-receive (path args)
   (let ((remote (process-contact sccollab-server :remote)))
-    (sccollab-entry (format "%s // from %d.%d.%d.%d%s"
+    (when (and (sclang-get-process) (string= path "sccollab/eval"))
+      (sclang-eval-string (car args) t))
+    (sccollab-entry (format "%s // from %d.%d.%d.%d:%d%s"
 			    (if (stringp (car args)) (car args) "")
 			    (aref remote 0) (aref remote 1) (aref remote 2)
-			    (aref remote 3)
+			    (aref remote 3) (aref remote 4)
 			    (if sccollab-debug
 				(format " osc path: <%s> args: <%s> "
 					path args) "")))))
@@ -110,9 +145,10 @@
 					 (if ip-list ip-list "")))))
 		  0)
 	  (setq ip-list (cons new-ip ip-list)))))
-    (dolist (client-ip ip-list)
-      (setq sccollab-clients (cons (osc-make-client client-ip 7777)
-				   sccollab-clients))
+    (dolist (server-ip ip-list)
+      (setq sccollab-servers (cons (osc-make-client server-ip
+						    sccollab-server-port)
+				   sccollab-servers))
       (end-of-buffer)
-      (insert "// connected to " client-ip " 7777 "
+      (insert "// connected to " server-ip " " sccollab-client-port " "
 	      (format "%s\n" (current-time))))))
