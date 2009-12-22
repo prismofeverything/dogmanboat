@@ -5,23 +5,6 @@
   :prefix 'sccollab
   :group 'sclang)
 
-(defcustom sccollab-timestamp-lambda #'current-time
-  "function to generate the timestamps in the *sccollab* buffer
-useful values include current-time and current-time-string"
-  ;;  :options '(#'current-time-string #'current-time) // how to make that work?
-  :group 'sccollab
-  :type 'function)
-
-(defcustom sccollab-default-server-port 7777
-  "default port to use for the sccollab local server"
-  :group 'sccollab
-  :type 'integer)
-
-(defcustom sccollab-default-client-port 7777
-  "default port to connect to on sccollab remote servers"
-  :group 'sccollab
-  :type 'integer)
-
 (define-minor-mode sccollab-mode
   "toggle sccollab mode
 With no argument, this command toggles the mode.
@@ -39,21 +22,50 @@ collaborators with 'C-c ,' or send and evaluate with 'C-c .'"
     ("\C-c/" . sccollab-restart) ("\C-c\\" . sccollab-stop))
   :group 'sccollab)
 
+(defcustom sccollab-timestamp-lambda #'current-time
+  "function to generate the timestamps in the *sccollab* buffer
+useful values include current-time and current-time-string"
+  ;;  :options '(#'current-time-string #'current-time) // how to make that work?
+  :group 'sccollab
+  :type 'function)
+
+(defcustom sccollab-default-server-port 7777
+  "default port to use for the sccollab local server"
+  :group 'sccollab
+  :type 'integer)
+
+(defcustom sccollab-default-client-port 7777
+  "default port to connect to on sccollab remote servers"
+  :group 'sccollab
+  :type 'integer)
+
+(defcustom sccollab-debug t
+  "provide extra debugging information for sccollab"
+  :group 'sccollab
+  :type 'bool)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (require 'osc)
 (require 'sclang)
 
-(defvar sccollab-debug t)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (defvar sccollab-server nil)
 (defvar sccollab-remote-servers '())
 (defvar sccollab-buffer nil)
 (defvar sccollab-server-port sccollab-default-server-port)
 (defvar sccollab-client-port sccollab-default-client-port)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (defmacro sccollab-entry (body)
   `(with-current-buffer sccollab-buffer
      (end-of-buffer)
      (insert ,body " // " (format "%s\n"
 				  (apply sccollab-timestamp-lambda '())))))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defun sccollab-restart ()
   "start up sccollab client and server"
