@@ -6,8 +6,9 @@
   :group 'sclang)
 
 (defcustom sccollab-timestamp-lambda #'current-time
-  "function to generate the timestamps in the *sccollab* buffer"
-  :options '(#'current-time-string #'current-time)
+  "function to generate the timestamps in the *sccollab* buffer
+useful values include current-time and current-time-string"
+  ;;  :options '(#'current-time-string #'current-time) // how to make that work?
   :group 'sccollab
   :type 'function)
 
@@ -21,13 +22,29 @@
   :group 'sccollab
   :type 'integer)
 
+(define-minor-mode sccollab-mode
+  "toggle sccollab mode
+With no argument, this command toggles the mode.
+Non-null prefix argument turns on the mode.
+Null prefix argument turns off the mode.
+
+When sccollab mode is enabled, you can send
+the current region to a group of collaborators
+with 'C-c ,' or send and evaluate with 'C-c .'"
+  :init-value  nil
+  :lighter " collab"
+  :keymap
+  '(("\C-c," . sccollab-noeval-region) ("\C-c." . sccollab-eval-region)
+    ("\C-c/" . sccollab-restart) ("\C-c\\" . sccollab-stop))
+  :group 'sccollab)
+
 (require 'osc)
 (require 'sclang)
 
 (defvar sccollab-debug t)
-(defvar sccollab-server)
+(defvar sccollab-server nil)
 (defvar sccollab-remote-servers '())
-(defvar sccollab-buffer)
+(defvar sccollab-buffer nil)
 (defvar sccollab-server-port sccollab-default-server-port)
 (defvar sccollab-client-port sccollab-default-client-port)
 
@@ -36,6 +53,13 @@
      (end-of-buffer)
      (insert ,body " // " (format "%s\n"
 				  (apply sccollab-timestamp-lambda '())))))
+
+(defun sccollab-restart ()
+  "start up sccollab client and server"
+  (interactive)
+  (sccollab-stop)
+  (sccollab-server-start)
+  (sccollab))
 
 (defun sccollab-server-start (&optional addr iface)
   "serve sccollab to people connecting at addrs"
