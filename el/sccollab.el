@@ -28,9 +28,10 @@ With no argument, this command toggles the mode.
 Non-null prefix argument turns on the mode.
 Null prefix argument turns off the mode.
 
-When sccollab mode is enabled, you can send
-the current region to a group of collaborators
-with 'C-c ,' or send and evaluate with 'C-c .'"
+When sccollab mode is enabled, you can (re)start the
+sccollab session with 'C-c/', you can stop it with
+'C-c\', you can send the current region to your group of
+collaborators with 'C-c ,' or send and evaluate with 'C-c .'"
   :init-value  nil
   :lighter " collab"
   :keymap
@@ -71,7 +72,7 @@ with 'C-c ,' or send and evaluate with 'C-c .'"
       ;; here we are making a list of network devices, and prompting the user
 	;; to select one, we then use the ip address of that device
 	(setq iface
-	      (let* (default-device-name (prompt "interface: ("))
+	      (let* (default-device-name (prompt "sccollab from interface: ("))
 		(let ((search-interfaces interfaces))
 		  ;; find the first interface that is not loopback, or settle
 		  ;; for loopback
@@ -176,7 +177,7 @@ with 'C-c ,' or send and evaluate with 'C-c .'"
       (let (new-ip)
 	(while (> (length
 		   (setq new-ip (read-from-minibuffer
-				 (format "%s add ip: "
+				 (format "%s add remote sccollab ip: "
 					 (if ip-list ip-list "")))))
 		  0)
 	  (setq ip-list (cons new-ip ip-list)))))
