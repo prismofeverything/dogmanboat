@@ -41,6 +41,9 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
      (format "[\\scel_emacs_callback, %s, %s]"
 	     sclang-callback-stack-counter string)))
 
+(defvar sclang-minibuf-results t
+  "if not-nil, echo the results of sclang calculations in the minibuffer")
+
 (defvar sclang-reply-hook)
 (setq sclang-reply-hook
   ;; a list of functions to be applied to the string returned by an
@@ -48,7 +51,15 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
   ;; todo: generalize this first callback, make a version that is a long
   ;; term responder, not self deleting on first call
   '((lambda (buffer) (sclang-error-filter buffer))
+    (lambda (buffer) (sclang-apply-any-hooks buffer))
     (lambda (buffer)
+      (if (and sclang-minibuf-results (> (length sclang-reply-string) 0))
+	  (message (sclang-minibuf-prepare-string sclang-reply-string 80)))
+      (with-current-buffer buffer
+	(goto-char (point-max))
+	(insert sclang-reply-string)))))
+
+(defun sclang-apply-any-hooks (buffer)
       (when (and (> (length sclang-reply-string) 23)
 		    (string= (substring sclang-reply-string 0 24)
 		     "\n[ scel_emacs_callback, "))
@@ -65,10 +76,7 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
 			   response-string))
 	    (setq sclang-callback-stack
 		  (assq-delete-all key sclang-callback-stack))))))
-    (lambda (buffer)
-      (with-current-buffer buffer
-	(end-of-buffer)
-	(insert sclang-reply-string)))))
+
 
 (defvar sclang-collapse-errors t)
 
@@ -77,14 +85,15 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
   (when (string-match "^ERROR: \\(.*\\)" sclang-reply-string)
     (let ((error-string (substring sclang-reply-string (nth 2 (match-data))
 				   (nth 3 (match-data))))
-	  (error-code)) ;; double check the following regexp, make a better one?
+	  error-code
+	  custom-message)
       (setq error-code (let ((code-start
 			      (if (string-match "var code = \\(.*\\)"
 						   sclang-reply-string)
 				     (nth 2 (match-data)) nil))
 			     (code-end
-			      (if (string-match "
-.*var doc ="
+		;;; double check the following regexp, make a better one?
+			      (if (string-match "\n.*var doc ="
 						sclang-reply-string)
 				     (car (match-data)) nil)))
 			 (if (and code-start code-end)
@@ -92,16 +101,20 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
 					code-start code-end)
 			   "not found")))
       (save-excursion
-	(end-of-buffer)
-	(insert (format (propertize "ERROR: %s code: %s"
-				    'face '((foreground-color . "red")
-					    (background-color . "black")))
-			(propertize error-string
-				    'face '((foreground-color . "green")
-					    (background-color . "black")))
-			(propertize error-code
-				    'face '((foreground-color . "violet")
-					    (background-color . "black")))))
+	(goto-char (point-max))
+	(setq error-code
+	      (format (propertize "ERROR: %s code: %s"
+				  'face '((foreground-color . "red")
+					  (background-color . "black")))
+		      (propertize error-string
+				  'face '((foreground-color . "green")
+					  (background-color . "black")))
+		      (propertize error-code
+				  'face '((foreground-color . "violet")
+					  (background-color . "black")))))
+	(insert error-code)
+	(when sclang-minibuf-results
+	  (message (sclang-minibuf-prepare-string error-code 80)))
 	(when sclang-collapse-errors
 	  (sclang-insert-collapsible sclang-reply-string)
 	  (setq sclang-reply-string ""))))))
@@ -138,7 +151,7 @@ black background"
 
 (defun sclang-insert-collapsible (text)
   (save-excursion 
-    (end-of-buffer)
+    (goto-char (point-max))
     (insert " ")
     (let ((button (insert-button (propertize "[+]" 'sclang-button t))))
       (insert "\n")
@@ -170,3 +183,17 @@ black background"
 	       (add-text-properties
 		start end
 		(list 'invisible new-invis-val))))))))))
+
+(defun sclang-minibuf-prepare-string (string width)
+  (let ((message-text
+	 (replace-regexp-in-string
+	  "\\(^[ ]+\\)\\|\\([ ]+$\\)" "" ; all leading/trailing space
+	  (replace-regexp-in-string
+	   "[ \t\n]+" " " string))))
+    (if (> (length message-text) (- width 8))
+	(format "sclang: %s ... %s"
+		(substring message-text 0 (/ (- width 13) 2))
+		(substring message-text (/ (- width 13) -2)))
+      (format "sclang: %s"
+	      message-text))))
+
