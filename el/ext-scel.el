@@ -41,23 +41,37 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
      (format "[\\scel_emacs_callback, %s, %s]"
 	     sclang-callback-stack-counter string)))
 
-(defvar sclang-minibuf-results t
-  "if not-nil, echo the results of sclang calculations in the minibuffer")
+(defcustom sclang-minibuf-results t
+  "If not-nil, echo the results of sclang calculations in the minibuffer."
+  :group 'sclang-interface
+  :type 'boolean)
 
-(defvar sclang-reply-hook)
+(defvar sclang-reply-hook
+  "A list of functions applied to the string returned by an sclang command.
+Argument is the post-buffer")
+
 (setq sclang-reply-hook
-  ;; a list of functions to be applied to the string returned by an
-  ;; sclang command
-  ;; todo: generalize this first callback, make a version that is a long
-  ;; term responder, not self deleting on first call
-  '((lambda (buffer) (sclang-error-filter buffer))
-    (lambda (buffer) (sclang-apply-any-hooks buffer))
-    (lambda (buffer)
-      (if (and sclang-minibuf-results (> (length sclang-reply-string) 0))
-	  (message (sclang-minibuf-prepare-string sclang-reply-string 80)))
-      (with-current-buffer buffer
-	(goto-char (point-max))
-	(insert sclang-reply-string)))))
+  '(sclang-error-filter
+    sclang-library-load-filter
+    sclang-jack-message-filter
+    sclang-apply-any-hooks
+    sclang-display-results))
+;;   :options '((sclang-error-filter
+;; 	      sclang-library-load-filter
+;; 	      sclang-jack-message-filter
+;; 	      sclang-apply-any-hooks
+;; 	      sclang-display-results)
+;; 	     (sclang-display-results))
+;;   :group 'sclang-interface
+;;   :type 'hook)
+
+(defun sclang-display-results (buffer)
+  (if (and sclang-minibuf-results (> (length sclang-reply-string) 0))
+      (message (concat "sclang: "
+		       (sclang-minibuf-prepare-string sclang-reply-string 72))))
+  (with-current-buffer buffer
+    (goto-char (point-max))
+    (insert sclang-reply-string)))
 
 (defun sclang-apply-any-hooks (buffer)
       (when (and (> (length sclang-reply-string) 23)
@@ -78,10 +92,33 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
 		  (assq-delete-all key sclang-callback-stack))))))
 
 
-(defvar sclang-collapse-errors t)
+(defcustom sclang-collapse t
+  "If non-nil, collapse some messages to a single expandable widget"
+  :group 'sclang-interface
+  :type 'boolean)
+
+(defcustom sclang-error-props '(face (foreground-color . "RGB:fff/0/0"))
+  "Text properties to be applied to sclang related error text."
+  :group 'sclang-interface
+  :options '((face ((foreground-color . "red")
+		    (background-color "dark gray")))
+	     (face (foreground-color . "RGB:fff/800/800")))
+  :type 'plist)
+
+(defcustom sclang-trunc-props '(face (foreground-color . "RGB:fff/800/fff"))
+  "Text properties to be applied to a truncated excerpt."
+  :group 'sclang-interface
+  :options '((face (foreground-color . "violet")))
+  :type 'plist)
+
+(defcustom sclang-message-props '(face '(foreground-color . "RGB:0/fff/0"))
+  "Text properties to be applied to sclang informational messages."
+  :group 'sclang-interface
+  :options '((face (foreground-color . "green")))
+  :type 'plist)
 
 (defun sclang-error-filter (buffer)
-  "highlight and make collapsible widgets out of errors"
+  "Highlight and make collapsible widgets out of errors."
   (when (string-match "^ERROR: \\(.*\\)" sclang-reply-string)
     (let ((error-string (substring sclang-reply-string (nth 2 (match-data))
 				   (nth 3 (match-data))))
@@ -97,27 +134,66 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
 						sclang-reply-string)
 				     (car (match-data)) nil)))
 			 (if (and code-start code-end)
-			     (substring sclang-reply-string
-					code-start code-end)
+			     (sclang-remove-surrounding-spaces
+			      (substring sclang-reply-string
+					 code-start code-end))
 			   "not found")))
       (save-excursion
 	(goto-char (point-max))
-	(setq error-code
-	      (format (propertize "ERROR: %s code: %s"
-				  'face '((foreground-color . "red")
-					  (background-color . "black")))
-		      (propertize error-string
-				  'face '((foreground-color . "green")
-					  (background-color . "black")))
-		      (propertize error-code
-				  'face '((foreground-color . "violet")
-					  (background-color . "black")))))
-	(insert error-code)
+	(setq custom-message
+	      (format (apply #'propertize (cons "ERROR: %s code: %s"
+						sclang-error-props)
+			     (apply #'propertize (cons error-string
+						       sclang-message-props))
+			     (apply #'propertize (cons error-code
+						       sclang-trunc-props)))))
+	(insert custom-message)
 	(when sclang-minibuf-results
-	  (message (sclang-minibuf-prepare-string error-code 80)))
-	(when sclang-collapse-errors
+	  (message (sclang-minibuf-prepare-string (concat "sclang: "
+							  custom-message) 80)))
+	(when sclang-collapse
 	  (sclang-insert-collapsible sclang-reply-string)
 	  (setq sclang-reply-string ""))))))
+
+(defvar sclang-loading-libs-state nil)
+(defun sclang-library-load-filter (buffer)
+  "Highlight and make collapsible widgets out of library load messages."
+  (when (string-match "^\tNumPrimitives =" sclang-reply-string)
+    (save-excursion
+      (goto-char (point-max))
+      (insert "Welcome to scel. Type ctrl-c ctrl-h for help.\n")
+      (when sclang-collapse
+	(insert "Click on the [+] strings below for more detailed info.\n")))
+    (setq sclang-loading-libs-state t))
+  (when (string-match "^Emacs: Built symbol" sclang-reply-string)
+    (setq sclang-loading-libs-state nil))
+  (when (and sclang-collapse sclang-loading-libs-state)
+    (save-excursion
+      (goto-char (point-max))
+      (insert  (apply #'propertize (cons "sclang init " sclang-message-props)))
+      (insert (apply #'propertize
+		     (cons (sclang-minibuf-prepare-string
+			    (sclang-remove-surrounding-spaces
+			     sclang-reply-string)
+			    64)
+			   sclang-trunc-props)))
+      (sclang-insert-collapsible sclang-reply-string))
+    (setq sclang-reply-string "")))
+
+(defun sclang-jack-message-filter (buffer)
+  "Highlight and make collapsible widgets out of the Jack messages."
+  (when	(and sclang-collapse (string-match "^JackDriver: " sclang-reply-string))
+    (save-excursion
+      (goto-char (point-max))
+      (insert (apply #'propertize (cons "JACK: "
+					sclang-message-props)))
+      (insert (apply #'propertize (cons (sclang-minibuf-prepare-string
+					 (sclang-remove-surrounding-spaces
+					  sclang-reply-string)
+					 70)
+					sclang-trunc-props)))
+      (sclang-insert-collapsible sclang-reply-string)
+      (setq sclang-reply-string ""))))
 
 (defun sclang-eval-face (string props)
   "Execute the region as SuperCollider code, and print the result in
@@ -156,7 +232,6 @@ black background"
     (let ((button (insert-button (propertize "[+]" 'sclang-button t))))
       (insert "\n")
       (insert (propertize text 'invisible t 'sclang-collapse t))
-      (insert "\n")
       (button-put
        button 'action
        (lambda (but)
@@ -186,14 +261,15 @@ black background"
 
 (defun sclang-minibuf-prepare-string (string width)
   (let ((message-text
-	 (replace-regexp-in-string
-	  "\\(^[ ]+\\)\\|\\([ ]+$\\)" "" ; all leading/trailing space
+	 (sclang-remove-surrounding-spaces
 	  (replace-regexp-in-string
 	   "[ \t\n]+" " " string))))
-    (if (> (length message-text) (- width 8))
-	(format "sclang: %s ... %s"
-		(substring message-text 0 (/ (- width 13) 2))
-		(substring message-text (/ (- width 13) -2)))
-      (format "sclang: %s"
-	      message-text))))
+    (if (> (length message-text) width)
+	(format "%s ... %s"
+		(substring message-text 0 (/ (- width 5) 2))
+		(substring message-text (/ (- width 5) -2)))
+      message-text)))
 
+(defun sclang-remove-surrounding-spaces (string)
+  (replace-regexp-in-string
+   "\\(^[ ]+\\)\\|\\([ ]+$\\)" "" string))
