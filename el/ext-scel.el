@@ -111,7 +111,7 @@ Argument is the post-buffer")
   :options '((face (foreground-color . "violet")))
   :type 'plist)
 
-(defcustom sclang-message-props '(face '(foreground-color . "RGB:0/fff/0"))
+(defcustom sclang-message-props '(face (foreground-color . "RGB:0/fff/0"))
   "Text properties to be applied to sclang informational messages."
   :group 'sclang-interface
   :options '((face (foreground-color . "green")))
@@ -141,12 +141,11 @@ Argument is the post-buffer")
       (save-excursion
 	(goto-char (point-max))
 	(setq custom-message
-	      (format (apply #'propertize (cons "ERROR: %s code: %s"
-						sclang-error-props)
-			     (apply #'propertize (cons error-string
-						       sclang-message-props))
-			     (apply #'propertize (cons error-code
-						       sclang-trunc-props)))))
+	      (concat
+	       (apply #'propertize (cons "ERROR: " sclang-error-props))
+	       (apply #'propertize (cons error-string sclang-message-props))
+	       (apply #'propertize (cons " code: " sclang-error-props))
+	       (apply #'propertize (cons error-code sclang-trunc-props))))
 	(insert custom-message)
 	(when sclang-minibuf-results
 	  (message (sclang-minibuf-prepare-string (concat "sclang: "
@@ -173,9 +172,7 @@ Argument is the post-buffer")
       (insert  (apply #'propertize (cons "sclang init " sclang-message-props)))
       (insert (apply #'propertize
 		     (cons (sclang-minibuf-prepare-string
-			    (sclang-remove-surrounding-spaces
-			     sclang-reply-string)
-			    64)
+			     sclang-reply-string 64)
 			   sclang-trunc-props)))
       (sclang-insert-collapsible sclang-reply-string))
     (setq sclang-reply-string "")))
@@ -188,9 +185,7 @@ Argument is the post-buffer")
       (insert (apply #'propertize (cons "JACK: "
 					sclang-message-props)))
       (insert (apply #'propertize (cons (sclang-minibuf-prepare-string
-					 (sclang-remove-surrounding-spaces
-					  sclang-reply-string)
-					 70)
+					 sclang-reply-string 70)
 					sclang-trunc-props)))
       (sclang-insert-collapsible sclang-reply-string)
       (setq sclang-reply-string ""))))
@@ -272,4 +267,4 @@ black background"
 
 (defun sclang-remove-surrounding-spaces (string)
   (replace-regexp-in-string
-   "\\(^[ ]+\\)\\|\\([ ]+$\\)" "" string))
+   "\\(^[ \t\n]+\\)\\|\\([ \t\n]+$\\)" "" string))
