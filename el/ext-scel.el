@@ -50,20 +50,22 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
   "A list of functions applied to the string returned by an sclang command.
 Argument is the post-buffer")
 
-(setq sclang-reply-hook
+(defcustom sclang-reply-hook
   '(sclang-error-filter
     sclang-library-load-filter
     sclang-jack-message-filter
     sclang-apply-any-hooks
-    sclang-display-results))
-;;   :options '((sclang-error-filter
-;; 	      sclang-library-load-filter
-;; 	      sclang-jack-message-filter
-;; 	      sclang-apply-any-hooks
-;; 	      sclang-display-results)
-;; 	     (sclang-display-results))
-;;   :group 'sclang-interface
-;;   :type 'hook)
+    sclang-display-results)
+  "A list of functions applied to the string returned by an sclang command.
+Argument is the post-buffer.
+For reading or modifying the string from sclang, use the variable sclang-reply-string"
+  :options '((sclang-error-filter
+	      sclang-library-load-filter
+ 	      sclang-jack-message-filter
+ 	      sclang-apply-any-hooks
+ 	      sclang-display-results)
+	     (sclang-display-results))
+   :group 'sclang-interface)
 
 (defun sclang-display-results (buffer)
   (if (and sclang-minibuf-results (> (length sclang-reply-string) 0))
@@ -100,21 +102,21 @@ Argument is the post-buffer")
 (defcustom sclang-error-props '(face (foreground-color . "RGB:fff/0/0"))
   "Text properties to be applied to sclang related error text."
   :group 'sclang-interface
-  :options '((face ((foreground-color . "red")
-		    (background-color "dark gray")))
-	     (face (foreground-color . "RGB:fff/800/800")))
+;;  :options '((face ((foreground-color . "red")
+;;		    (background-color . "dark gray")))
+;;	     (face (foreground-color . "RGB:fff/800/800")))
   :type 'plist)
 
 (defcustom sclang-trunc-props '(face (foreground-color . "RGB:fff/800/fff"))
   "Text properties to be applied to a truncated excerpt."
   :group 'sclang-interface
-  :options '((face (foreground-color . "violet")))
+;;  :options '((face (foreground-color . "violet")))
   :type 'plist)
 
 (defcustom sclang-message-props '(face (foreground-color . "RGB:0/fff/0"))
   "Text properties to be applied to sclang informational messages."
   :group 'sclang-interface
-  :options '((face (foreground-color . "green")))
+;;  :options '((face (foreground-color . "green")))
   :type 'plist)
 
 (defun sclang-error-filter (buffer)
