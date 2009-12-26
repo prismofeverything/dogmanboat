@@ -46,10 +46,6 @@ otherwise nil. Return value of the lambda will be printed in the postbuffer"
   :group 'sclang-interface
   :type 'boolean)
 
-(defvar sclang-reply-hook
-  "A list of functions applied to the string returned by an sclang command.
-Argument is the post-buffer")
-
 (defcustom sclang-reply-hook
   '(sclang-error-filter
     sclang-library-load-filter
