@@ -258,11 +258,12 @@ black background"
 	  (replace-regexp-in-string
 	   "[ \t\n]+" " " string))))
     (if (> (length message-text) width)
-	(format "%s ... %s"
-		(substring message-text 0 (/ (- width 5) 2))
-		(substring message-text (/ (- width 5) -2)))
+	(format "%s…%s"
+		(substring message-text 0 (/ (- width 1) 2))
+		(substring message-text (/ (- width 1) -2)))
       message-text)))
 
 (defun sclang-remove-surrounding-spaces (string)
   (replace-regexp-in-string
    "\\(^[ \t\n]+\\)\\|\\([ \t\n]+$\\)" "" string))
+
