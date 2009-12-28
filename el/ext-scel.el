@@ -1,7 +1,7 @@
 (defvar sclang-reply-string nil)
 ;; redefinition of the scel version, only different on a couple of lines
 (defun sclang-process-filter (process string)
-  (let ((buffer (process-buffer process)))
+  (let ((buffer (get-buffer sclang-post-buffer)))
     (with-current-buffer buffer
       (when (and (> sclang-max-post-buffer-size 0)
 		 (> (buffer-size) sclang-max-post-buffer-size))
@@ -65,8 +65,7 @@ For reading or modifying the string from sclang, use the variable sclang-reply-s
 
 (defun sclang-display-results (buffer)
   (if (and sclang-minibuf-results (> (length sclang-reply-string) 0))
-      (message (concat "sclang: "
-		       (sclang-minibuf-prepare-string sclang-reply-string 72))))
+      (sclang-message  (sclang-minibuf-prepare-string sclang-reply-string 72)))
   (with-current-buffer buffer
     (goto-char (point-max))
     (insert sclang-reply-string)))
@@ -146,8 +145,7 @@ For reading or modifying the string from sclang, use the variable sclang-reply-s
 	       (apply #'propertize (cons error-code sclang-trunc-props))))
 	(insert custom-message)
 	(when sclang-minibuf-results
-	  (message (sclang-minibuf-prepare-string (concat "sclang: "
-							  custom-message) 80)))
+	  (sclang-message (sclang-minibuf-prepare-string custom-message 72)))
 	(when sclang-collapse
 	  (sclang-insert-collapsible sclang-reply-string)
 	  (setq sclang-reply-string ""))))))
@@ -266,4 +264,3 @@ black background"
 (defun sclang-remove-surrounding-spaces (string)
   (replace-regexp-in-string
    "\\(^[ \t\n]+\\)\\|\\([ \t\n]+$\\)" "" string))
-
