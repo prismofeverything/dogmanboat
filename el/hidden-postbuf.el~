@@ -37,8 +37,9 @@
 	buf
       (if (not (get-buffer sclang-hidden-post-buffer))
 	  (error "sclang postbuffer has been unexpectedly deleted")
-	(make-indirect-buffer
-	 sclang-hidden-post-buffer sclang-post-buffer t)))))
+	(progn (make-indirect-buffer
+		sclang-hidden-post-buffer sclang-post-buffer t)
+	       (get-buffer sclang-post-buffer))))))
 
 (defun sclang-start ()
   "Start SuperCollider process."

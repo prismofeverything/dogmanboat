@@ -139,7 +139,7 @@
        id="rect2385"
        style="opacity:1;fill:#84bea3;fill-opacity:1;stroke:#000000;stroke-width:0.88297457;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,-3.7534701,310.42411)"
+       transform="matrix(0.8608114,0,0,0.8608114,4.8584329,313.86344)"
        id="g18162">
       <g
          transform="translate(0.2525381,0.5050763)"
@@ -1259,11 +1259,11 @@
          xlink:href="#path11273"
          id="textPath19969">_eval</textPath></text>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,340.06494,68.098847)"
+       transform="matrix(0.490838,0,0,0.490838,433.65011,278.33289)"
        id="g14914">
       <rect
-         width="36.404938"
-         height="24.925739"
+         width="37.296272"
+         height="85.027039"
          x="78.583244"
          y="565.61359"
          id="rect14916"
@@ -1290,7 +1290,7 @@
            id="tspan14930">sends sclang code to sc</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,300.10838,70.265394)"
+       transform="matrix(0.490838,0,0,0.490838,409.30422,291.44326)"
        id="g14934">
       <rect
          width="36.404938"
@@ -1320,14 +1320,8 @@
            y="532.25635"
            id="tspan14944">creates strings to eval in sc</tspan></text>
     </g>
-    <path
-       d="M 399.32492,567.01793 L 407.47689,566.57591"
-       inkscape:connection-start="#g14934"
-       inkscape:connection-end="#g14914"
-       id="path14946"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,224.1515,92.090833)"
+       transform="matrix(0.490838,0,0,0.490838,347.11832,292.51321)"
        id="g14950">
       <rect
          width="50.921066"
@@ -1358,25 +1352,24 @@
            id="tspan14960">sends data back that sclang requested</tspan></text>
     </g>
     <path
-       d="M 335.86369,582.84952 L 367.52033,572.88549"
+       d="M 410.81704,576.07635 L 447.74278,575.36085"
        inkscape:connection-start="#g14950"
        inkscape:connection-end="#g14934"
        id="path14962"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.6324957;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <path
-       d="M 206.22662,485.5413 L 302.29563,578.74405"
+       d="M 209.89439,483.08181 L 385.55688,570.06687"
        inkscape:connection-start="#g11528"
        inkscape:connection-end="#g14950"
        id="path14964"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86081159;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);marker-end:none;stroke-miterlimit:4;stroke-dasharray:0.86081156, 3.44324623;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 421.51986,554.75207 L 413.40322,506.90089"
-       inkscape:connection-start="#g14914"
-       inkscape:connection-end="#rect2383"
+       d="M 479.15518,538.9222 L 477.65118,504.98091"
+       inkscape:connection-start="#g24953"
        id="path14966"
        style="opacity:0.4481328;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:5.59527588;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,294.48798,123.33647)"
+       transform="matrix(0.490838,0,0,0.490838,442.59945,334.7046)"
        id="g14968">
       <rect
          width="57.658653"
@@ -1413,19 +1406,19 @@
        id="path9112"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86081159;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.86081156, 3.44324623;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 415.24806,475.22132 L 389.0444,609.98969"
+       d="M 421.45367,475.22132 L 492.15138,612.19615"
        inkscape:connection-start="#g11590"
        inkscape:connection-end="#g14968"
        id="path14980"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86081159;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);stroke-miterlimit:4;stroke-dasharray:0.86081156, 3.44324623;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 386.23143,609.98969 L 384.15379,578.84178"
+       d="M 489.84008,612.19615 L 462.38832,581.43549"
        inkscape:connection-start="#g14968"
        inkscape:connection-end="#g14934"
        id="path14982"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.6324957;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,379.61714,107.31898)"
+       transform="matrix(0.490838,0,0,0.490838,407.05432,332.30961)"
        id="g14984">
       <rect
          width="44.892696"
@@ -1456,17 +1449,11 @@
            id="tspan14994">calls a command handler in sc</tspan></text>
     </g>
     <path
-       d="M 420.09205,475.22132 L 462.86914,593.9722"
-       inkscape:connection-start="#g11590"
-       inkscape:connection-end="#g14984"
-       id="path14996"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86081159;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);stroke-miterlimit:4;stroke-dasharray:0.86081156, 3.44324623;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
-    <path
-       d="M 447.02909,595.72547 L 399.32492,574.84181"
+       d="M 456.66771,609.80116 L 456.78458,581.43549"
        inkscape:connection-start="#g14984"
        inkscape:connection-end="#g14934"
        id="path14998"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.6324957;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <text
        x="28.730661"
        y="51.186573"
@@ -1544,7 +1531,7 @@
            id="tspan18751">IdentityDictionary of documents</tspan></text>
     </g>
     <g
-       transform="matrix(0.6160674,0,0,0.6160674,82.036899,717.3006)"
+       transform="matrix(0.6160674,0,0,0.6160674,236.64216,681.77428)"
        id="g18763">
       <g
          transform="translate(0.2525381,0.5050763)"
@@ -1582,11 +1569,11 @@
            id="tspan18777">interaction</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,502.53288,193.51091)"
+       transform="matrix(0.490838,0,0,0.490838,453.04793,364.94936)"
        id="g18779">
       <rect
-         width="39.631866"
-         height="24.925739"
+         width="66.11718"
+         height="25.435072"
          x="78.583244"
          y="565.61359"
          id="rect18781"
@@ -1616,7 +1603,7 @@
            id="tspan18795">sclang</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,142.16633,426.37242)"
+       transform="matrix(0.8608114,0,0,0.8608114,296.77159,390.8461)"
        id="g18799">
       <rect
          width="50.921066"
@@ -1647,7 +1634,7 @@
            id="tspan18809">initializes sclang-mode for a buffer</tspan></text>
     </g>
     <g
-       transform="matrix(0.6160674,0,0,0.6160674,322.88601,610.11696)"
+       transform="matrix(0.6160674,0,0,0.6160674,470.25443,584.45907)"
        id="g18811">
       <g
          transform="translate(0.2525381,0.5050763)"
@@ -1685,13 +1672,13 @@
            id="tspan18825">interaction</tspan></text>
     </g>
     <path
-       d="M 532.59182,811.842 L 582.27408,702.0873"
+       d="M 662.47659,786.18411 L 515.0225,655.19159"
        inkscape:connection-start="#g18829"
        inkscape:connection-end="#g18779"
        id="path18827"
        style="opacity:0.4481328;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,438.01544,325.18878)"
+       transform="matrix(0.8608114,0,0,0.8608114,585.38386,299.53089)"
        id="g18829">
       <rect
          width="50.921066"
@@ -1722,13 +1709,13 @@
            id="tspan18839">initializes sclang-mode for a buffer</tspan></text>
     </g>
     <path
-       d="M 298.41293,967.14236 L 575.76584,702.0873"
+       d="M 449.12707,931.61604 L 506.52225,655.19159"
        inkscape:connection-start="#g18843"
        inkscape:connection-end="#g18779"
        id="path18841"
        style="opacity:0.4481328;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,199.30428,480.48914)"
+       transform="matrix(0.8608114,0,0,0.8608114,353.90954,444.96282)"
        id="g18843">
       <rect
          width="61.822922"
@@ -1749,7 +1736,7 @@
            id="tspan18849">sclang-library-startup-hook-function</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,157.59934,505.73415)"
+       transform="matrix(0.8608114,0,0,0.8608114,312.2046,470.20783)"
        id="g18855">
       <rect
          width="48.132217"
@@ -1770,19 +1757,19 @@
            id="tspan18861">sclang-set-current-document</tspan></text>
     </g>
     <path
-       d="M 284.7356,976.4206 L 254.36898,992.38737"
+       d="M 439.34086,940.89428 L 408.97424,956.86105"
        inkscape:connection-start="#g18843"
        inkscape:connection-end="#g18855"
        id="path18863"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <path
-       d="M 569.94483,685.05102 L 411.99996,629.56223"
+       d="M 505.22615,642.44091 L 497.84568,624.48066"
        inkscape:connection-start="#g18779"
        inkscape:connection-end="#g14968"
        id="path18865"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,38.721384,368.60446)"
+       transform="matrix(0.5629837,0,0,0.5629837,335.77111,506.47647)"
        id="g18867">
       <rect
          width="44.59758"
@@ -1813,13 +1800,13 @@
            id="tspan18877">IdentityDictionary names / lambdas</tspan></text>
     </g>
     <path
-       d="M 196.04582,689.87753 L 202.58891,686.84384"
+       d="M 458.40491,692.2724 L 456.91375,701.11673"
        inkscape:connection-start="#g18881"
        inkscape:connection-end="#g18867"
        id="path18879"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.96669143;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.96669138, 0.96669138;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,86.686042,202.45737)"
+       transform="matrix(0.5629837,0,0,0.5629837,401.75608,360.27067)"
        id="g18881">
       <rect
          width="48.188286"
@@ -1850,7 +1837,7 @@
            id="tspan18891">calls a command handler in sc</tspan></text>
     </g>
     <path
-       d="M 120.21618,766.9726 L 166.52935,710.09351"
+       d="M 127.19313,773.7095 L 445.84452,689.05502"
        inkscape:connection-start="#g9010"
        inkscape:connection-end="#g18881"
        id="path18893"
@@ -2044,7 +2031,7 @@
        id="path19578"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77017856;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77017852, 0.77017852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 361.32096,256.59707 L 581.537,680.16413"
+       d="M 360.4948,256.59707 L 505.45086,642.44091"
        inkscape:connection-start="#g18741"
        inkscape:connection-end="#g18779"
        id="path18753"
@@ -3138,7 +3125,7 @@
            id="tspan20477">compatibility</tspan></text>
     </g>
     <path
-       d="M 248.63159,913.02564 L 570.50937,702.0873"
+       d="M 391.94771,877.49932 L 504.61492,655.19159"
        inkscape:connection-start="#g18799"
        inkscape:connection-end="#g18779"
        id="path18797"
@@ -3179,19 +3166,19 @@
            id="tspan20493" /></text>
     </g>
     <path
-       d="M 159.18331,733.94259 L 86.749092,768.43298"
+       d="M 157.028,737.38192 L 86.749092,769.20041"
        inkscape:connection-start="#g18162"
        inkscape:connection-end="#g20479"
        id="path20497"
        style="opacity:0.59336093;fill:#f19a9a;fill-opacity:1;fill-rule:evenodd;stroke:#e553a0;stroke-width:1.1028024;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 319.58106,733.94259 L 313.18831,747.20351"
+       d="M 319.66635,737.38192 L 314.08681,747.20351"
        inkscape:connection-start="#g18162"
        inkscape:connection-end="#g20459"
        id="path20499"
        style="opacity:0.59336093;fill:#f19a9a;fill-opacity:1;fill-rule:evenodd;stroke:#e553a0;stroke-width:1.1028024;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,122.38725,421.99844)"
+       transform="matrix(0.8608114,0,0,0.8608114,168.11049,406.76344)"
        id="g20501">
       <rect
          width="42.973804"
@@ -3215,8 +3202,8 @@
        transform="matrix(0.8608114,0,0,0.8608114,-43.657509,288.56769)"
        id="g20513">
       <rect
-         width="46.189796"
-         height="9.8440409"
+         width="42.559502"
+         height="6.6493807"
          x="78.583244"
          y="565.61359"
          id="rect20515"
@@ -3233,19 +3220,19 @@
            id="tspan20519">sclang-make-buffer-name</tspan></text>
     </g>
     <path
-       d="M 146.02074,733.94259 L 53.850039,775.22091"
+       d="M 139.8235,737.38192 L 49.679705,775.22091"
        inkscape:connection-start="#g18162"
        inkscape:connection-end="#g20513"
        id="path20525"
        style="opacity:0.4481328;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <path
-       d="M 63.243774,775.22091 L 292.42824,722.34348"
+       d="M 55.188936,775.22091 L 338.68308,707.10848"
        inkscape:connection-start="#g20513"
        inkscape:connection-end="#g20501"
        id="path20527"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77017856;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77017852, 0.77017852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,263.28715,217.21787)"
+       transform="matrix(0.7187134,0,0,0.7187134,307.02608,261.5153)"
        id="g20529">
       <rect
          width="46.189796"
@@ -3266,13 +3253,13 @@
            id="tspan20535">sclang-get-post-buffer</tspan></text>
     </g>
     <path
-       d="M 318.55108,716.16597 L 332.381,712.81176"
+       d="M 354.25761,700.93097 L 376.81831,675.29928"
        inkscape:connection-start="#g20501"
        inkscape:connection-end="#g20529"
        id="path20537"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77017856;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77017852, 0.77017852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,171.52393,422.75107)"
+       transform="matrix(0.8608114,0,0,0.8608114,221.52392,411.56686)"
        id="g20539">
       <rect
          width="48.719463"
@@ -3303,13 +3290,13 @@
          y="629.11615"
          id="tspan20549" /></text>
     <path
-       d="M 352.47371,712.81176 L 355.27781,720.35925"
+       d="M 382.50814,675.29928 L 404.33278,709.17504"
        inkscape:connection-start="#g20529"
        inkscape:connection-end="#g20539"
        id="path20551"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.76999998;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77, 0.77;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,276.29708,185.39191)"
+       transform="matrix(0.7187134,0,0,0.7187134,309.94013,227.1705)"
        id="g21080">
       <rect
          width="46.189796"
@@ -3330,13 +3317,13 @@
            id="tspan21086">with-sclang-post-buffer</tspan></text>
     </g>
     <path
-       d="M 361.99539,680.9858 L 352.64025,703.87109"
+       d="M 382.70089,640.95448 L 380.42021,667.83449"
        inkscape:connection-start="#g21080"
        inkscape:connection-end="#g20529"
        id="path21088"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,259.41643,148.40501)"
+       transform="matrix(0.7187134,0,0,0.7187134,278.97601,194.69275)"
        id="g21090">
       <rect
          width="46.189796"
@@ -3357,13 +3344,13 @@
            id="tspan21096">sclang-show-post-buffer</tspan></text>
     </g>
     <path
-       d="M 348.98237,643.9989 L 361.78254,672.04513"
+       d="M 355.6119,608.47673 L 379.45913,633.48969"
        inkscape:connection-start="#g21090"
        inkscape:connection-end="#g21080"
        id="path21098"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,303.7147,150.77045)"
+       transform="matrix(0.7187134,0,0,0.7187134,318.81492,203.31258)"
        id="g21100">
       <rect
          width="46.189796"
@@ -3384,13 +3371,13 @@
            id="tspan21106">sclang-clear-post-buffer</tspan></text>
     </g>
     <path
-       d="M 387.70023,646.36434 L 367.36296,672.04513"
+       d="M 390.50397,617.09656 L 384.40597,633.48969"
        inkscape:connection-start="#g21100"
        inkscape:connection-end="#g21080"
        id="path21108"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,234.68681,196.78905)"
+       transform="matrix(0.7187134,0,0,0.7187134,268.17869,230.17714)"
        id="g21110">
       <rect
          width="46.189796"
@@ -3411,45 +3398,33 @@
            id="tspan21116">sclang-init-post-buffer</tspan></text>
     </g>
     <path
-       d="M 328.47098,692.38294 L 344.55439,703.87109"
-       inkscape:connection-start="#g21110"
-       inkscape:connection-end="#g20529"
-       id="path21118"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
-    <path
-       d="M 338.53343,683.44227 L 347.50187,680.9858"
+       d="M 358.04962,639.01967 L 366.22409,638.43114"
        inkscape:connection-start="#g21110"
        inkscape:connection-end="#g21080"
        id="path21120"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <text
-       transform="matrix(0.9995608,2.9635834e-2,-2.9635834e-2,0.9995608,16.261515,-8.8398878)"
+       transform="translate(-0.25,-1.375)"
        id="text21122"
        xml:space="preserve"
-       style="font-size:3.67955232px;font-style:normal;font-weight:normal;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><textPath
-         xlink:href="#path21118"
-         id="textPath21773"><tspan
+       style="font-size:3.67955279px;font-style:normal;font-weight:normal;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><textPath
+         xlink:href="#path21887"
+         id="textPath21889"><tspan
    id="tspan21124">redundant</tspan></textPath></text>
     <path
-       d="M 320.40369,692.38294 L 245.08997,878.51388"
-       inkscape:connection-start="#g21110"
-       inkscape:connection-end="#g18763"
-       id="path21129"
-       style="opacity:0.77178423;fill:#bd7fa1;fill-opacity:1;fill-rule:evenodd;stroke:#bd7fa1;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
-    <path
-       d="M 328.91801,683.44227 L 384.53491,646.36434"
+       d="M 348.29122,636.49633 L 384.85728,617.09656"
        inkscape:connection-start="#g21110"
        inkscape:connection-end="#g21100"
        id="path21131"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <path
-       d="M 324.49735,683.44227 L 344.6573,643.9989"
+       d="M 342.39184,636.49633 L 350.91775,608.47673"
        inkscape:connection-start="#g21110"
        inkscape:connection-end="#g21090"
        id="path21133"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,78.48531,130.72821)"
+       transform="matrix(1.3053659,0,0,1.3053659,96.330709,-81.399582)"
        id="g21135">
       <rect
          width="36.197357"
@@ -3470,7 +3445,7 @@
            id="tspan21141">sclang-get-process</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,76.334907,151.37206)"
+       transform="matrix(0.4594937,0,0,0.4594937,134.59255,386.0895)"
        id="g21143">
       <rect
          width="47.688663"
@@ -3491,7 +3466,7 @@
            id="tspan21149">sclang-library-initialized-p</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,92.892996,171.80087)"
+       transform="matrix(0.4871708,0,0,0.4871708,149.05619,325.30549)"
        id="g21151">
       <rect
          width="47.688663"
@@ -3512,19 +3487,19 @@
            id="tspan21157">sclang-library-initialized-p</tspan></text>
     </g>
     <path
-       d="M 176.91761,658.45409 L 168.65194,648.25619"
+       d="M 197.84234,606.51394 L 182.70769,645.86079"
        inkscape:connection-start="#g21151"
        inkscape:connection-end="#g21143"
        id="path21159"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 163.82016,638.02528 L 162.36697,627.18226"
+       d="M 188.89668,651.32196 L 202.83454,656.57917"
        inkscape:connection-start="#g21143"
        inkscape:connection-end="#g21135"
        id="path21161"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,120.41813,149.43669)"
+       transform="matrix(0.8608114,0,0,0.8608114,44.391814,135.75248)"
        id="g21690">
       <rect
          width="47.688663"
@@ -3545,13 +3520,13 @@
            id="tspan21696">sclang-on-library-startup</tspan></text>
     </g>
     <path
-       d="M 202.29301,646.32082 L 187.35976,658.45409"
+       d="M 146.77182,622.4057 L 190.91432,606.51394"
        inkscape:connection-start="#g21690"
        inkscape:connection-end="#g21151"
        id="path21698"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,116.54743,127.5026)"
+       transform="matrix(0.8608114,0,0,0.8608114,86.771114,205.31839)"
        id="g21700">
       <rect
          width="47.688663"
@@ -3572,13 +3547,13 @@
            id="tspan21706">sclang-library-startup-hook</tspan></text>
     </g>
     <path
-       d="M 207.68623,636.08991 L 205.62098,624.38673"
+       d="M 135.67895,632.63661 L 171.82562,691.97161"
        inkscape:connection-start="#g21690"
        inkscape:connection-end="#g21700"
        id="path21708"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,163.21113,148.36149)"
+       transform="matrix(0.5840406,0,0,0.5840406,234.7148,272.35151)"
        id="g21744">
       <rect
          width="47.688663"
@@ -3599,7 +3574,7 @@
            id="tspan21750">sclang-on-library-shutdown</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,159.34043,126.4274)"
+       transform="matrix(0.4667422,0,0,0.4667422,254.91134,363.8155)"
        id="g21752">
       <rect
          width="47.688663"
@@ -3620,17 +3595,19 @@
            id="tspan21758">sclang-library-shutdown-hook</tspan></text>
     </g>
     <path
-       d="M 250.47923,635.01471 L 248.41398,623.31153"
+       d="M 279.05419,629.78878 L 291.4629,630.13987"
+       inkscape:connection-start="#g21788"
+       inkscape:connection-end="#g21752"
        id="path21760"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <path
-       d="M 236.0356,645.24562 L 196.41018,658.45409"
+       d="M 280.45225,605.65353 L 210.70427,603.91219"
        inkscape:connection-start="#g21744"
        inkscape:connection-end="#g21151"
        id="path21762"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,212.24031,134.16885)"
+       transform="matrix(0.4667422,0,0,0.4667422,247.10407,351.36079)"
        id="g21776">
       <rect
          width="47.688663"
@@ -3651,19 +3628,19 @@
            id="tspan21782">sclang-process-sentinel</tspan></text>
     </g>
     <path
-       d="M 306.82459,631.05298 L 358.21814,672.04513"
+       d="M 306.16705,620.45881 L 366.22409,633.55895"
        inkscape:connection-start="#g21776"
        inkscape:connection-end="#g21080"
        id="path21784"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <path
-       d="M 282.73955,631.05298 L 269.05354,635.01471"
+       d="M 294.82473,615.22997 L 294.64504,609.47588"
        inkscape:connection-start="#g21776"
        inkscape:connection-end="#g21744"
        id="path21786"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,180.37939,160.08089)"
+       transform="matrix(0.4667422,0,0,0.4667422,224.07212,362.94351)"
        id="g21788">
       <rect
          width="38.945278"
@@ -3684,7 +3661,7 @@
            id="tspan21794">sclang-process-filter</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,188.6934,190.83194)"
+       transform="matrix(0.7185195,0,0,0.7185195,201.53717,235.0914)"
        id="g21800">
       <rect
          width="25.955105"
@@ -3705,7 +3682,7 @@
            id="tspan21806">sclang-start</tspan></text>
     </g>
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,188.04828,205.56217)"
+       transform="matrix(0.7185195,0,0,0.7185195,201.46821,249.21263)"
        id="g21808">
       <rect
          width="25.955105"
@@ -3726,19 +3703,19 @@
            id="tspan21814">sclang-stop</tspan></text>
     </g>
     <path
-       d="M 267.30478,686.85591 L 267.07006,692.21539"
+       d="M 267.30629,649.12273 L 267.27553,655.4222"
        inkscape:connection-start="#g21800"
        inkscape:connection-end="#g21808"
        id="path21816"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <path
-       d="M 278.9146,683.36767 L 302.09876,685.80128"
+       d="M 276.84483,644.57022 L 324.46265,641.36065"
        inkscape:connection-start="#g21800"
        inkscape:connection-end="#g21110"
        id="path21818"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,218.79902,169.32792)"
+       transform="matrix(0.7187134,0,0,0.7187134,231.24278,244.49113)"
        id="g21820">
       <rect
          width="54.433563"
@@ -3759,31 +3736,25 @@
            id="tspan21826">sclang-start-command-process</tspan></text>
     </g>
     <path
-       d="M 276.78654,677.48516 L 300.38344,665.56693"
-       inkscape:connection-start="#g21800"
-       inkscape:connection-end="#g21820"
-       id="path21828"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
-    <path
-       d="M 302.6252,716.16597 L 272.34968,686.85591"
+       d="M 347.1158,700.93097 L 272.92582,649.12273"
        inkscape:connection-start="#g20501"
        inkscape:connection-end="#g21800"
        id="path21830"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77017856;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77017852, 0.77017852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 297.41815,631.05298 L 270.25132,677.48516"
+       d="M 292.09918,620.77729 L 271.29056,641.30097"
        inkscape:connection-start="#g21776"
        inkscape:connection-end="#g21800"
        id="path21832"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77017856;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77017852, 0.77017852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <path
-       d="M 265.23516,656.74998 L 267.0907,677.48516"
+       d="M 269.40376,632.24341 L 267.95216,641.30097"
        inkscape:connection-start="#g21788"
        inkscape:connection-end="#g21800"
        id="path21834"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77017856;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77017852, 0.77017852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
     <g
-       transform="matrix(0.8608114,0,0,0.8608114,185.89788,221.6902)"
+       transform="matrix(0.7185195,0,0,0.7185195,201.18616,258.18819)"
        id="g21836">
       <rect
          width="25.955105"
@@ -3804,10 +3775,1670 @@
            id="tspan21842">sclang-kill</tspan></text>
     </g>
     <path
-       d="M 266.24014,701.58614 L 265.33917,708.34342"
+       d="M 276.84483,647.499 L 290.627,650.81032"
+       inkscape:connection-start="#g21800"
+       inkscape:connection-end="#g21820"
+       id="path21828"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 267.13353,663.24396 L 267.09727,664.39776"
        inkscape:connection-start="#g21808"
        inkscape:connection-end="#g21836"
        id="path21844"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,156.64978,437.7445)"
+       id="g21846">
+      <rect
+         width="53.138634"
+         height="5.8297582"
+         x="191.60094"
+         y="341.97052"
+         id="rect21848"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text21850"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan21852">sclang-bullet-latin-1 :: const char</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,160.11935,441.82286)"
+       id="g21854">
+      <rect
+         width="51.033062"
+         height="5.7571526"
+         x="191.60094"
+         y="341.97052"
+         id="rect21856"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="219.89119"
+         y="304.21521"
+         transform="scale(0.8790289,1.137619)"
+         id="text21858"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="219.89119"
+           y="304.21521"
+           id="tspan21860">sclang-bullet-utf-8 :: const char</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,225.89978,446.37445)"
+       id="g21862">
+      <rect
+         width="73.686104"
+         height="6.3379998"
+         x="191.60094"
+         y="341.97052"
+         id="rect21864"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text21866"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan21868">sclang-parse-error-regexp :: const regex-string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,141.52236,432.51323)"
+       id="g21870">
+      <rect
+         width="73.686104"
+         height="6.3379998"
+         x="191.60094"
+         y="341.97052"
+         id="rect21872"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text21874"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan21876">sclang-max-post-buffer-size :: custom integer</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,240.74411,418.93258)"
+       id="g21878">
+      <rect
+         width="75.138222"
+         height="6.047576"
+         x="191.60094"
+         y="341.97052"
+         id="rect21880"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text21882"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan21884">sclang-auto-scroll-post-buffer :: custom boolean</tspan></text>
+    </g>
+    <path
+       d="M 351.04104,700.93097 L 341.85778,643.96112"
+       inkscape:connection-start="#g20501"
+       inkscape:connection-end="#g21110"
+       id="path21887"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.77017856;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.77017852, 0.77017852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.3726262,0,0,0.3726262,318.6013,651.03195)"
+       id="g21892">
+      <g
+         transform="translate(0.2525381,0.5050763)"
+         id="g21894">
+        <rect
+           width="344.06406"
+           height="34.137169"
+           x="33.581791"
+           y="263.08356"
+           id="rect21896"
+           style="fill:#cebdbd;fill-opacity:1;stroke:#000000;stroke-width:3.8147831;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           x="34.321915"
+           y="306.29095"
+           transform="scale(1.0723365,0.9325431)"
+           id="text21898"
+           xml:space="preserve"
+           style="font-size:25.09554482px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+             x="34.321915"
+             y="306.29095"
+             id="tspan21900">compilation-minor-mode</tspan></text>
+      </g>
+    </g>
+    <path
+       d="M 341.66661,643.96112 L 363.55465,842.98756"
+       inkscape:connection-start="#g21110"
+       inkscape:connection-end="#g18763"
+       id="path21129"
+       style="opacity:0.77178423;fill:#bd7fa1;fill-opacity:1;fill-rule:evenodd;stroke:#bd7fa1;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 343.00474,643.96112 L 391.99981,748.54124"
+       inkscape:connection-start="#g21110"
+       inkscape:connection-end="#g21892"
+       id="path21908"
+       style="opacity:0.59336093;fill:#f19a9a;fill-opacity:1;fill-rule:evenodd;stroke:#e553a0;stroke-width:1.1028024;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,253.92818,480.84442)"
+       id="g21910">
+      <rect
+         width="48.995571"
+         height="8.1482468"
+         x="78.583244"
+         y="565.61359"
+         id="rect21912"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21914"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21916">sclang-process :: const string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,209.06934,465.97934)"
+       id="g21918">
+      <rect
+         width="52.190231"
+         height="7.4221873"
+         x="78.583244"
+         y="565.61359"
+         id="rect21920"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21922"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21924">sclang-program :: custom string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,210.22432,445.91011)"
+       id="g21926">
+      <rect
+         width="71.503403"
+         height="7.8578229"
+         x="78.583244"
+         y="565.61359"
+         id="rect21928"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21930"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21932">sclang-runtime-directory :: custom directory</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,197.17569,458.07223)"
+       id="g21934">
+      <rect
+         width="82.539505"
+         height="7.4221873"
+         x="78.583244"
+         y="565.61359"
+         id="rect21936"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21938"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21940">sclang-library-configuration-file :: custom  filename</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,185.96667,429.77421)"
+       id="g21950">
+      <rect
+         width="54.077984"
+         height="7.567399"
+         x="78.583244"
+         y="565.61359"
+         id="rect21952"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21954"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21956">sclang-heap-size :: custom string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,197.65672,432.19509)"
+       id="g21958">
+      <rect
+         width="58.869976"
+         height="7.8578229"
+         x="78.583244"
+         y="565.61359"
+         id="rect21960"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21962"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21964">sclang-heap-growth :: custom string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,206.40417,435.48587)"
+       id="g21966">
+      <rect
+         width="55.384892"
+         height="7.1317635"
+         x="78.583244"
+         y="565.61359"
+         id="rect21968"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21970"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21972">sclang-udp-port :: custom integer</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,212.0617,438.87423)"
+       id="g21974">
+      <rect
+         width="56.837009"
+         height="7.8578229"
+         x="78.583244"
+         y="565.61359"
+         id="rect21976"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21978"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21980">sclang-main-run :: custom boolean</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,213.56425,442.64268)"
+       id="g21982">
+      <rect
+         width="58.579552"
+         height="7.7126112"
+         x="78.583244"
+         y="565.61359"
+         id="rect21984"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21986"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan21988">sclang-main-stop :: custom boolean</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.8608114,0,0,0.8608114,-44.275704,300.23863)"
+       id="g21990">
+      <rect
+         width="31.378189"
+         height="6.3589568"
+         x="78.583244"
+         y="565.61359"
+         id="rect21992"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.070381"
+         y="474.46832"
+         transform="scale(0.8320585,1.2018385)"
+         id="text21994"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.070381"
+           y="474.46832"
+           id="tspan21996">sclang-message</tspan></text>
+    </g>
+    <path
+       d="M 129.54747,632.63661 L 38.625785,786.89185"
+       inkscape:connection-start="#g21690"
+       inkscape:connection-end="#g21990"
+       id="path21998"
+       style="opacity:0.4481328;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5454016,0,0,0.5454016,163.66932,338.15197)"
+       id="g22000">
+      <rect
+         width="43.187096"
+         height="10.326425"
+         x="78.583244"
+         y="565.61359"
+         id="rect22002"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text22004"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan22006">sclang-memory-option-p</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5454016,0,0,0.5454016,154.87827,329.9153)"
+       id="g22008">
+      <rect
+         width="36.797775"
+         height="10.181212"
+         x="78.583244"
+         y="565.61359"
+         id="rect22010"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text22012"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan22014">sclang-port-option-p</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5454016,0,0,0.5454016,168.86218,319.43891)"
+       id="g22016">
+      <rect
+         width="38.811169"
+         height="9.9720135"
+         x="78.583244"
+         y="565.61359"
+         id="rect22018"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text22020"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan22022">sclang-make-options</tspan></text>
+    </g>
+    <path
+       d="M 235.84745,631.50847 L 233.03716,631.32925"
+       inkscape:connection-start="#g21926"
+       inkscape:connection-end="#g22016"
+       id="path22024"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 239.18738,629.57939 L 233.03716,629.96754"
+       inkscape:connection-start="#g21982"
+       inkscape:connection-end="#g22016"
+       id="path22038"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 240.79308,626.59849 L 233.03716,628.29601"
+       inkscape:connection-start="#g21974"
+       inkscape:connection-end="#g22016"
+       id="path22040"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 238.52303,622.97257 L 228.36623,627.77758"
+       inkscape:connection-start="#g21966"
+       inkscape:connection-end="#g22016"
+       id="path22042"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 231.7849,619.91935 L 224.8396,627.77758"
+       inkscape:connection-start="#g21958"
+       inkscape:connection-end="#g22016"
+       id="path22044"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 220.68757,617.40345 L 221.95511,627.77758"
+       inkscape:connection-start="#g21950"
+       inkscape:connection-end="#g22016"
+       id="path22046"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 235.0517,643.04804 L 225.25201,633.5121"
+       inkscape:connection-start="#g21934"
+       inkscape:connection-end="#g22016"
+       id="path22048"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 218.3495,633.5121 L 211.80714,638.25397"
+       inkscape:connection-start="#g22016"
+       inkscape:connection-end="#g22008"
+       id="path22050"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.38584909;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 221.69577,633.5121 L 218.93612,646.49064"
+       inkscape:connection-start="#g22016"
+       inkscape:connection-end="#g22000"
+       id="path22052"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.38584909;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 247.7584,650.95515 L 257.80594,648.006"
+       inkscape:connection-start="#g21918"
+       inkscape:connection-end="#g21800"
+       id="path22054"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 286.34349,665.82023 L 270.93448,649.12273"
+       inkscape:connection-start="#g21910"
+       inkscape:connection-end="#g21800"
+       id="path22056"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 257.80594,642.13167 L 231.16682,633.5121"
+       inkscape:connection-start="#g21800"
+       inkscape:connection-end="#g22016"
+       id="path22058"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33749601;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 279.55131,667.65996 L 276.49382,667.81766"
+       inkscape:connection-start="#g21910"
+       inkscape:connection-end="#g21836"
+       id="path23114"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 257.73698,660.32871 L 246.51533,661.50237"
+       inkscape:connection-start="#g21808"
+       inkscape:connection-end="#g21135"
+       id="path23116"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 257.45493,667.38787 L 246.51533,666.32974"
+       inkscape:connection-start="#g21836"
+       inkscape:connection-end="#g21135"
+       id="path23118"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5454016,0,0,0.5454016,210.11999,366.26026)"
+       id="g23120">
+      <rect
+         width="54.188164"
+         height="10.326425"
+         x="78.583244"
+         y="565.61359"
+         id="rect23122"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23124"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23126">sclang-release-command-fifo</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.4552468,0,0,0.4552468,223.57166,430.61412)"
+       id="g23128">
+      <rect
+         width="54.188164"
+         height="10.326425"
+         x="78.583244"
+         y="565.61359"
+         id="rect23130"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23132"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23134">sclang-delete-command-fifo</tspan></text>
+    </g>
+    <path
+       d="M 268.65854,680.52674 L 270.92805,687.98446"
+       inkscape:connection-start="#g23120"
+       inkscape:connection-end="#g23128"
+       id="path23136"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 267.30494,672.21952 L 267.50605,674.59893"
+       inkscape:connection-start="#g21836"
+       inkscape:connection-end="#g23120"
+       id="path23138"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.50832283;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,282.53581,490.32648)"
+       id="g23140">
+      <rect
+         width="48.995571"
+         height="8.1482468"
+         x="78.583244"
+         y="565.61359"
+         id="rect23142"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23144"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan23146">sclang-command-fifo :: fifo</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,271.80555,517.74095)"
+       id="g23148">
+      <rect
+         width="63.130981"
+         height="8.912323"
+         x="78.583244"
+         y="565.61359"
+         id="rect23150"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23152"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan23154">sclang-mkfifo-program :: custom string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,290.45029,483.45806)"
+       id="g23156">
+      <rect
+         width="63.130981"
+         height="8.912323"
+         x="78.583244"
+         y="565.61359"
+         id="rect23158"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23160"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan23162">sclang-cat-program :: custom string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.3271925,0,0,0.3271925,297.05555,477.0732)"
+       id="g23164">
+      <rect
+         width="55.490219"
+         height="8.5302849"
+         x="78.583244"
+         y="565.61359"
+         id="rect23166"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="96.942978"
+         y="475.07239"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23168"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="96.942978"
+           y="475.07239"
+           id="tspan23170">sclang-command-process :: string</tspan></text>
+    </g>
+    <path
+       d="M 311.64815,678.14576 L 279.7115,687.98446"
+       inkscape:connection-start="#g23140"
+       inkscape:connection-end="#g23128"
+       id="path23172"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 282.68161,677.30474 L 308.15894,676.86417"
+       inkscape:connection-start="#g23120"
+       inkscape:connection-end="#g23140"
+       id="path23174"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5454016,0,0,0.5454016,249.60025,385.13855)"
+       id="g23176">
+      <rect
+         width="54.188164"
+         height="10.326425"
+         x="78.583244"
+         y="565.61359"
+         id="rect23178"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23180"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23182">sclang-create-command-fifo</tspan></text>
+    </g>
+    <path
+       d="M 308.59368,693.47722 C 308.52963,686.90741 309.59385,681.02262 315.61229,678.14576"
+       inkscape:connection-start="#g23176"
+       inkscape:connection-end="#g23140"
+       id="path23184"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 292.3118,693.92982 L 284.13886,692.55462"
+       inkscape:connection-start="#g23176"
+       inkscape:connection-end="#g23128"
+       id="path23186"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 307.72506,702.71676 L 307.46742,699.40503"
+       inkscape:connection-start="#g23148"
+       inkscape:connection-end="#g23176"
+       id="path23190"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 315.61229,678.14576 C 315.98112,687.61973 312.01791,690.1143 308.59368,693.47722"
+       inkscape:connection-start="#g23140"
+       inkscape:connection-end="#g23176"
+       id="path23192"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 307.27827,658.81374 L 307.2401,693.47722"
+       inkscape:connection-start="#g21820"
+       inkscape:connection-end="#g23176"
+       id="path23194"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 315.68046,675.30229 L 308.92275,658.81374"
+       inkscape:connection-start="#g23140"
+       inkscape:connection-end="#g21820"
+       id="path23196"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 324.53155,668.43387 L 312.3499,658.81374"
+       inkscape:connection-start="#g23156"
+       inkscape:connection-end="#g21820"
+       id="path23198"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 327.66513,662.04901 L 318.55322,658.81374"
+       inkscape:connection-start="#g23164"
+       inkscape:connection-end="#g21820"
+       id="path23200"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.2503036,0,0,0.2503036,267.70794,530.64501)"
+       id="g23202">
+      <rect
+         width="62.268257"
+         height="12.557873"
+         x="78.583244"
+         y="565.61359"
+         id="rect23204"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23206"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23208">sclang-command-process-sentinel</tspan></text>
+    </g>
+    <path
+       d="M 296.21686,672.15226 L 304.72895,658.81374"
+       inkscape:connection-start="#g23202"
+       inkscape:connection-end="#g21820"
+       id="path23210"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.4667422,0,0,0.4667422,282.23091,319.728)"
+       id="g23212">
+      <rect
+         width="62.268257"
+         height="12.557873"
+         x="78.583244"
+         y="565.61359"
+         id="rect23214"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23216"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23218">sclang-command-process-filter</tspan></text>
+    </g>
+    <path
+       d="M 332.26733,589.71157 L 308.81848,650.81032"
+       inkscape:connection-start="#g23212"
+       inkscape:connection-end="#g21820"
+       id="path23220"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 320.7996,576.55122 L 329.61548,583.59718"
+       inkscape:connection-start="#g23775"
+       inkscape:connection-end="#g23212"
+       id="path23230"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 348.0988,584.31498 L 385.55688,578.33679"
+       inkscape:connection-start="#g23212"
+       inkscape:connection-end="#g14950"
+       id="path23240"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 287.30974,674.87311 L 282.68161,675.50975"
+       inkscape:connection-start="#g23202"
+       inkscape:connection-end="#g23120"
+       id="path23769"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3312642;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="translate(-28,1.25)"
+       id="g23775">
+      <g
+         transform="matrix(0.4667422,0,0,0.4667422,295.08462,306.16215)"
+         id="g23222">
+        <rect
+           width="57.356113"
+           height="11.963481"
+           x="78.583244"
+           y="564.39862"
+           id="rect23224"
+           style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <text
+           x="96.070374"
+           y="472.83609"
+           transform="scale(0.8320585,1.2018385)"
+           id="text23226"
+           xml:space="preserve"
+           style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+             x="96.070374"
+             y="472.83609"
+             id="tspan23228">sclang-command-process-previous</tspan></text>
+      </g>
+      <text
+         x="399.70184"
+         y="477.54999"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23771"
+         xml:space="preserve"
+         style="font-size:0.99427378px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="399.70184"
+           y="477.54999"
+           id="tspan23773">helps make coherant chunks out of the output stream</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.4667422,0,0,0.4667422,381.91527,319.93581)"
+       id="g23795">
+      <rect
+         width="52.359146"
+         height="11.218803"
+         x="78.583244"
+         y="565.61359"
+         id="rect23797"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23799"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23801">sclang-set-command-handler</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.4667422,0,0,0.4667422,348.72777,326.87331)"
+       id="g23803">
+      <rect
+         width="56.10854"
+         height="10.415362"
+         x="78.583244"
+         y="565.61359"
+         id="rect23805"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23807"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23809">sclang-default-command-handler</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.4667422,0,0,0.4667422,348.60277,334.06081)"
+       id="g23811">
+      <rect
+         width="56.10854"
+         height="10.415362"
+         x="78.583244"
+         y="565.61359"
+         id="rect23813"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23815"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23817">sclang-debug-command-handler</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.4667422,0,0,0.4667422,378.35277,329.18581)"
+       id="g23819">
+      <rect
+         width="66.553276"
+         height="10.95099"
+         x="78.583244"
+         y="565.61359"
+         id="rect23821"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="98.862717"
+         y="476.40149"
+         transform="scale(0.8320585,1.2018385)"
+         id="text23823"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="98.862717"
+           y="476.40149"
+           id="tspan23825">sclang-toggle-debug-command-handler</tspan></text>
+    </g>
+    <path
+       d="M 411.72066,594.30476 L 414.90433,594.5468"
+       inkscape:connection-start="#g23803"
+       inkscape:connection-end="#g23819"
+       id="path23827"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 411.59566,598.53617 L 414.90433,598.0479"
+       inkscape:connection-start="#g23811"
+       inkscape:connection-end="#g23819"
+       id="path23829"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 430.63548,593.05499 L 430.73781,589.29438"
+       inkscape:connection-start="#g23819"
+       inkscape:connection-end="#g23795"
+       id="path23831"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.39585778;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,319.87299,403.53445)"
+       id="g23833">
+      <rect
+         width="53.138634"
+         height="5.8297582"
+         x="191.60094"
+         y="341.97052"
+         id="rect23835"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text23837"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan23839">sclang-command-handler : plist</tspan></text>
+    </g>
+    <path
+       d="M 430.74766,583.80499 L 430.66281,580.21254"
+       inkscape:connection-start="#g23795"
+       inkscape:connection-end="#g23833"
+       id="path23841"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 493.25811,612.19615 L 488.43011,597.82512"
+       inkscape:connection-start="#g14968"
+       inkscape:connection-end="#g14914"
+       id="path23843"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 460.38664,609.80116 L 472.08867,591.41521"
+       inkscape:connection-start="#g14984"
+       inkscape:connection-end="#g14914"
+       id="path23845"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 410.81704,576.39755 C 408.59212,561.3852 449.79515,544.44513 472.08867,576.76855"
+       inkscape:connection-start="#g14950"
+       inkscape:connection-end="#g14914"
+       id="path23847"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 528.48677,639.99417 L 46.618579,786.89185"
+       inkscape:connection-start="#g24977"
+       inkscape:connection-end="#g21990"
+       id="path23849"
+       style="opacity:0.4481328;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 419.26984,475.22132 L 455.07863,609.80116"
+       inkscape:connection-start="#g11590"
+       inkscape:connection-end="#g14984"
+       id="path14996"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.86081159;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Sstart);stroke-miterlimit:4;stroke-dasharray:0.86081156, 3.44324623;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 417.01669,577.65102 L 410.81704,577.21314"
+       inkscape:connection-start="#g23833"
+       inkscape:connection-end="#g14950"
+       id="path24905"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,399.26339,382.52328)"
+       id="g24907">
+      <rect
+         width="74.68914"
+         height="6.1332865"
+         x="191.60094"
+         y="341.97052"
+         id="rect24909"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text24911"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan24913">sclang-token-interpret-cmd-line :: const string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,398.80115,388.07027)"
+       id="g24915">
+      <rect
+         width="81.06324"
+         height="7.0438714"
+         x="191.60094"
+         y="341.97052"
+         id="rect24917"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text24919"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan24921">sclang-token-interpret-print-cmd-line :: const string</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.490838,0,0,0.490838,431.92604,261.43065)"
+       id="g24953">
+      <rect
+         width="36.404938"
+         height="24.925739"
+         x="78.583244"
+         y="565.61359"
+         id="rect24955"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="97.905472"
+         y="474.91568"
+         transform="scale(0.8320585,1.2018385)"
+         id="text24957"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="97.905472"
+           y="474.91568"
+           id="tspan24959">sclang-send-string</tspan></text>
+      <text
+         x="90.237808"
+         y="532.25635"
+         transform="scale(0.9170184,1.0904907)"
+         id="text24961"
+         xml:space="preserve"
+         style="font-size:2.48209238px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="90.237808"
+           y="532.25635"
+           id="tspan24963">sends sclang data to sc</tspan></text>
+    </g>
+    <path
+       d="M 480.08596,555.82444 L 479.81579,551.42288"
+       inkscape:connection-start="#g14914"
+       inkscape:connection-end="#g24953"
+       id="path24967"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 470.3646,549.36711 C 372.06645,529.40706 266.11487,550.62949 238.60023,656.57917"
+       inkscape:connection-start="#g24953"
+       inkscape:connection-end="#g21135"
+       id="path24969"
+       style="opacity:0.38174277;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 511.60635,565.36469 L 490.66127,573.30454"
+       inkscape:connection-start="#g24915"
+       inkscape:connection-end="#g14914"
+       id="path24973"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 512.49702,559.35545 L 490.66127,571.61223"
+       inkscape:connection-start="#g24907"
+       inkscape:connection-end="#g14914"
+       id="path24975"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.490838,0,0,0.490838,490.81863,353.22969)"
+       id="g24977">
+      <rect
+         width="39.85804"
+         height="24.925739"
+         x="77.013649"
+         y="565.61359"
+         id="rect24979"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text24981"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan24983">sclang-eval-expression</tspan></text>
+      <text
+         x="85.445251"
+         y="531.6806"
+         transform="scale(0.9170184,1.0904907)"
+         id="text24985"
+         xml:space="preserve"
+         style="font-size:2.48209238px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="85.445251"
+           y="531.6806"
+           id="tspan24987">sends sclang code from minibuf</tspan></text>
+    </g>
+    <path
+       d="M 532.47566,630.72124 L 490.66127,586.61914"
+       inkscape:connection-start="#g24977"
+       inkscape:connection-end="#g14914"
+       id="path24989"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.490838,0,0,0.490838,479.3408,291.32306)"
+       id="g24991">
+      <rect
+         width="30.754398"
+         height="9.543725"
+         x="77.013649"
+         y="565.61359"
+         id="rect24993"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text24995"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan24997">sclang-eval-line</tspan></text>
+    </g>
+    <path
+       d="M 517.00894,572.27138 L 490.66127,575.63816"
+       inkscape:connection-start="#g24991"
+       inkscape:connection-end="#g14914"
+       id="path25003"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.2884858,0,0,0.2884858,485.07665,472.88057)"
+       id="g25005">
+      <rect
+         width="69.832695"
+         height="6.1332865"
+         x="191.60094"
+         y="341.97052"
+         id="rect25007"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text25009"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan25011">sclang-eval-line-forward :: custom boolean</tspan></text>
+    </g>
+    <path
+       d="M 540.28223,571.97397 L 532.37054,571.62688"
+       inkscape:connection-start="#g25005"
+       inkscape:connection-end="#g24991"
+       id="path25013"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.490838,0,0,0.490838,484.58221,299.5779)"
+       id="g25015">
+      <rect
+         width="34.207504"
+         height="9.2298069"
+         x="77.013649"
+         y="565.61359"
+         id="rect25017"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25019"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan25021">sclang-eval-region</tspan></text>
+    </g>
+    <path
+       d="M 522.25035,579.01148 L 490.66127,577.32157"
+       inkscape:connection-start="#g25015"
+       inkscape:connection-end="#g14914"
+       id="path25027"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.490838,0,0,0.490838,488.41382,309.55066)"
+       id="g25029">
+      <rect
+         width="43.938984"
+         height="7.0323763"
+         x="77.013649"
+         y="565.61359"
+         id="rect25031"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25033"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan25035">sclang-eval-region-or-line</tspan></text>
+    </g>
+    <path
+       d="M 528.43617,587.04221 L 490.66127,578.84093"
+       inkscape:connection-start="#g25029"
+       inkscape:connection-end="#g14914"
+       id="path25037"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.490838,0,0,0.490838,493.335,343.6228)"
+       id="g25039">
+      <rect
+         width="34.521423"
+         height="7.3462949"
+         x="77.013649"
+         y="565.61359"
+         id="rect25041"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25043"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan25045">sclang-eval-defun</tspan></text>
+    </g>
+    <path
+       d="M 537.16952,621.11435 L 490.66127,584.19622"
+       inkscape:connection-start="#g25039"
+       inkscape:connection-end="#g14914"
+       id="path25047"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,354.62385,482.17403)"
+       id="g25049">
+      <rect
+         width="40.755081"
+         height="6.3937402"
+         x="191.60094"
+         y="341.97052"
+         id="rect25051"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text25053"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan25055">sclang-eval-results ::  list</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.6858222,0,0,0.6858222,420.81388,438.54942)"
+       id="g25065">
+      <g
+         transform="matrix(1,0,0,0.3836188,-182.14286,203.65285)"
+         id="g25067">
+        <rect
+           width="19.160946"
+           height="22.386665"
+           x="228.67606"
+           y="322.92358"
+           id="rect25069"
+           style="fill:#b2d2a6;fill-opacity:1;stroke:#000000;stroke-width:0.58842862;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+      <text
+         x="62.43145"
+         y="260.30521"
+         transform="scale(0.7821596,1.2785115)"
+         id="text25071"
+         xml:space="preserve"
+         style="font-size:3.59259343px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="62.43145"
+           y="260.30521"
+           id="tspan25073">evalSclang</tspan></text>
+    </g>
+    <path
+       d="M 460.33008,663.05344 L 461.64644,659.13842"
+       inkscape:connection-start="#g25065"
+       inkscape:connection-end="#g25049"
+       id="path25075"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73935246;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:1.47870495, 0.73935248, 0.36967624, 0.73935248;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 459.33988,669.1932 L 459.46789,678.54925"
+       inkscape:connection-start="#g25065"
+       inkscape:connection-end="#g18881"
+       id="path25077"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5629837,0,0,0.5629837,404.91187,316.63828)"
+       id="g25079">
+      <rect
+         width="48.188286"
+         height="23.833458"
+         x="78.583244"
+         y="565.61359"
+         id="rect25081"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="102.99581"
+         y="475.8476"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25083"
+         xml:space="preserve"
+         style="font-size:4.60463572px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="102.99581"
+           y="475.8476"
+           id="tspan25085">sclang-eval-sync</tspan></text>
+      <text
+         x="90.237839"
+         y="532.25635"
+         transform="scale(0.9170184,1.0904907)"
+         id="text25087"
+         xml:space="preserve"
+         style="font-size:2.48209238px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="90.237839"
+           y="532.25635"
+           id="tspan25089">return a lisp value from an sc call</tspan></text>
+    </g>
+    <path
+       d="M 340.77424,662.04901 L 449.00031,644.05865"
+       inkscape:connection-start="#g23164"
+       inkscape:connection-end="#g25079"
+       id="path25091"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 331.87619,662.04901 L 333.3772,589.71157"
+       inkscape:connection-start="#g23164"
+       inkscape:connection-end="#g23212"
+       id="path25093"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 461.12048,634.91686 L 458.01237,621.5635"
+       inkscape:connection-start="#g25079"
+       inkscape:connection-end="#g14984"
+       id="path25095"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 462.50451,648.64001 L 462.2868,655.65139"
+       inkscape:connection-start="#g25079"
+       inkscape:connection-end="#g25049"
+       id="path25099"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73935246;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:1.47870495, 0.73935248, 0.36967624, 0.73935248;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <text
+       x="474.45496"
+       y="650.46198"
+       id="text25101"
+       xml:space="preserve"
+       style="font-size:1.07836223px;font-style:normal;font-weight:normal;fill:#d11a4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+         x="474.45496"
+         y="650.46198"
+         id="tspan25115">my prejudice is not to</tspan><tspan
+         x="474.45496"
+         y="651.80994"
+         id="tspan25144">use busy-waits, and use</tspan><tspan
+         x="474.45496"
+         y="653.1579"
+         id="tspan25146">callbacks instead - is there</tspan><tspan
+         x="474.45496"
+         y="654.50586"
+         id="tspan25148">a reason a callback will</tspan><tspan
+         x="474.45496"
+         y="655.85376"
+         id="tspan25150">not work here? (yeah it</tspan><tspan
+         x="474.45496"
+         y="657.20172"
+         id="tspan25152">means splitting all code</tspan><tspan
+         x="474.45496"
+         y="658.54968"
+         id="tspan25154">after the sc call into a callback)</tspan></text>
+    <path
+       d="M 351.79907,592.40994 L 343.19212,589.71157"
+       inkscape:connection-start="#g21878"
+       inkscape:connection-end="#g23212"
+       id="path25156"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 267.63526,614.42259 L 269.44281,626.81269"
+       inkscape:connection-start="#g21846"
+       inkscape:connection-end="#g21788"
+       id="path25158"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 270.27463,618.46409 L 269.94587,626.81269"
+       inkscape:connection-start="#g21854"
+       inkscape:connection-end="#g21788"
+       id="path25160"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 258.46902,609.44932 L 268.30132,626.81269"
+       inkscape:connection-start="#g21870"
+       inkscape:connection-end="#g21788"
+       id="path25162"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 341.81049,623.31054 L 341.37843,636.49633"
+       inkscape:connection-start="#g21862"
+       inkscape:connection-end="#g21110"
+       id="path25164"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.3594842;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.35948419, 0.35948419;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 295.69795,609.47588 L 301.79055,627.68468"
+       inkscape:connection-start="#g21744"
+       inkscape:connection-end="#g21752"
+       id="path25166"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,497.53516,397.10129)"
+       id="g25168">
+      <rect
+         width="83.525612"
+         height="7.536346"
+         x="191.60094"
+         y="341.97052"
+         id="rect25170"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text25172"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan25174">sclang-show-workspace-on-startup :: custom boolean</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.490838,0,0,0.490838,589.41531,309.26166)"
+       id="g25176">
+      <rect
+         width="53.106979"
+         height="7.0323763"
+         x="77.013649"
+         y="565.61359"
+         id="rect25178"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25180"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan25182">sclang-fill-workspace-mode-map</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.490838,0,0,0.490838,558.04031,309.51166)"
+       id="g25184">
+      <rect
+         width="53.106979"
+         height="7.0323763"
+         x="77.013649"
+         y="565.61359"
+         id="rect25186"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25188"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan25190">sclang-switch-to-workspace</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.5076403,0,0,0.5076403,465.91016,402.85129)"
+       id="g25192">
+      <rect
+         width="53.977131"
+         height="6.3051591"
+         x="191.60094"
+         y="341.97052"
+         id="rect25194"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="304.1514"
+         transform="scale(0.8790289,1.137619)"
+         id="text25196"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="304.1514"
+           id="tspan25198">sclang-workspace-buffer :: string</tspan></text>
+    </g>
+    <path
+       d="M 581.96845,579.77071 L 603.37332,587.00321"
+       inkscape:connection-start="#g25192"
+       inkscape:connection-end="#g25184"
+       id="path25200"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 622.04155,588.75727 L 627.08345,588.71709"
+       inkscape:connection-start="#g25184"
+       inkscape:connection-end="#g25176"
+       id="path25202"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.57152951;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <path
+       d="M 607.51327,590.72115 L 422.7231,842.98756"
+       inkscape:connection-start="#g25184"
+       inkscape:connection-end="#g18763"
+       id="path25204"
+       style="opacity:0.77178423;fill:#bd7fa1;fill-opacity:1;fill-rule:evenodd;stroke:#bd7fa1;stroke-width:1.70500004;stroke-linecap:butt;stroke-linejoin:miter;marker-start:none;marker-end:url(#Arrow2Mend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.8608114,0,0,0.8608114,208.95875,616.28893)"
+       id="g25206">
+      <rect
+         width="51.042854"
+         height="6.9945202"
+         x="190.6017"
+         y="345.9675"
+         id="rect25208"
+         style="fill:#ece496;fill-opacity:1;stroke:#000000;stroke-width:0.47534636;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="218.56963"
+         y="308.23605"
+         transform="scale(0.8790289,1.137619)"
+         id="text25210"
+         xml:space="preserve"
+         style="font-size:3.49956894px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="218.56963"
+           y="308.23605"
+           id="tspan25212">sclang-mode-map :: mode-map</tspan></text>
+    </g>
+    <path
+       d="M 397.09482,913.89711 L 607.66377,590.72115"
+       inkscape:connection-start="#g25206"
+       inkscape:connection-end="#g25184"
+       id="path25214"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.96669143;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.96669138, 0.96669138;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 259.0728,630.88592 C 381.04317,724.79876 559.07067,654.0279 595.70845,590.44395"
+       inkscape:connection-start="#g21926"
+       inkscape:connection-end="#g25184"
+       id="path25216"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.60898852;stroke-linecap:butt;stroke-linejoin:miter;marker-mid:none;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.60898852, 0.60898852;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 615.10838,574.64571 L 609.69008,587.00321"
+       inkscape:connection-start="#g25168"
+       inkscape:connection-end="#g25184"
+       id="path25218"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.31397912;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:0.31397909, 0.31397909;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <path
+       d="M 601.42138,590.72115 C 542.31384,761.18755 382.92173,751.76205 195.45261,691.97161"
+       inkscape:connection-start="#g25184"
+       inkscape:connection-end="#g21700"
+       id="path25220"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92799997;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:1.856, 0.928, 0.464, 0.928;stroke-dashoffset:0;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.490838,0,0,0.490838,499.43695,320.63719)"
+       id="g25222">
+      <rect
+         width="34.207504"
+         height="9.2298069"
+         x="77.013649"
+         y="565.61359"
+         id="rect25224"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25226"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan25228">sclang-main-run</tspan></text>
+    </g>
+    <path
+       d="M 539.1315,598.12874 L 490.66127,580.25011"
+       inkscape:connection-start="#g25222"
+       inkscape:connection-end="#g14914"
+       id="path25230"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
+    <g
+       transform="matrix(0.490838,0,0,0.490838,496.18695,329.63719)"
+       id="g25232">
+      <rect
+         width="34.207504"
+         height="9.2298069"
+         x="77.013649"
+         y="565.61359"
+         id="rect25234"
+         style="fill:#add4d5;fill-opacity:1;stroke:#000000;stroke-width:0.54228342;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         x="94.88723"
+         y="474.65448"
+         transform="scale(0.8320585,1.2018385)"
+         id="text25236"
+         xml:space="preserve"
+         style="font-size:3.6971221px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
+           x="94.88723"
+           y="474.65448"
+           id="tspan25238">sclang-main-stop</tspan></text>
+    </g>
+    <path
+       d="M 537.90922,607.12874 L 490.66127,581.8025"
+       inkscape:connection-start="#g25232"
+       inkscape:connection-end="#g14914"
+       id="path25240"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.92816776;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Send);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;display:inline" />
   </g>
 </svg>

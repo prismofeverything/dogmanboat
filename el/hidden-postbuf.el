@@ -1,3 +1,8 @@
+;;; hidden post-buffer for sclang, in order to prevent the postbuffer's deletion
+;;; killing the language process inadvertantly
+
+(eval-when (load) (error "this code is severely broken and could lead to needing to forcibly kill the editor process, do not test it with unsaved work"))
+
 (defconst sclang-hidden-post-buffer (concat " " sclang-post-buffer))
 
 (defun sclang-recover-postbuffer ()
