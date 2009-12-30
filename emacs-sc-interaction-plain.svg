@@ -2288,10 +2288,10 @@
          style="font-size:3.8045609px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
            x="45.568253"
            y="319.70111"
-           id="tspan19807">string</tspan><tspan
+           id="tspan19809">string</tspan><tspan
            x="45.568253"
            y="324.45682"
-           id="tspan19809">currentLine</tspan><tspan
+           id="tspan25244">currentLine</tspan><tspan
            x="45.568253"
            y="329.21252"
            id="tspan19886">currentBlock</tspan><tspan
@@ -2539,28 +2539,28 @@
            id="tspan19989">checkCurrent :: lambda</tspan></text>
     </g>
     <text
-       x="393.35959"
-       y="302.02786"
+       x="394.12216"
+       y="305.08154"
        id="text20038"
        xml:space="preserve"
        style="font-size:1.35692394px;font-style:normal;font-weight:normal;fill:#d11a4c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans"><tspan
-         x="393.35959"
-         y="302.02786"
+         x="394.12216"
+         y="305.08154"
          id="tspan20044">These are defined by</tspan><tspan
-         x="393.35959"
-         y="303.72403"
+         x="394.12216"
+         y="306.77771"
          id="tspan20050"> quoted lisp code, better</tspan><tspan
-         x="393.35959"
-         y="305.42017"
+         x="394.12216"
+         y="308.47385"
          id="tspan20056">to define a lisp function and</tspan><tspan
-         x="393.35959"
-         y="307.11633"
+         x="394.12216"
+         y="310.17001"
          id="tspan20162">use the emacsinterface class</tspan><tspan
-         x="393.35959"
-         y="308.81247"
+         x="394.12216"
+         y="311.86615"
          id="tspan20058">or sendToLisp than hand multiple</tspan><tspan
-         x="393.35959"
-         y="310.50864"
+         x="394.12216"
+         y="313.56232"
          id="tspan20060">strings to eval</tspan></text>
     <path
        d="M 306.88974,174.42316 L 285.64936,259.18892"
